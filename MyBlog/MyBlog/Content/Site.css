@@ -854,10 +854,16 @@ tr.pager td {
 { float: right; }
 
 .post .row
-{ clear: both; }
+{ 
+    clear: both;
+}
 
 .post .post-body
-{ margin-top: 25px; clear: both; }
+{ 
+    font-size:x-large;
+    margin-top: 25px;
+    clear: both; 
+}
 
 .post .post-foot
 { float: right; }
