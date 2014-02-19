@@ -32,6 +32,9 @@
    
   @Html.Partial("_Pager", Model)
 
+              @Html.Partial("_Search")
+            @* Call the child action to render the sidebar *@
+            @Html.Action("Sidebars")
 
 
 
