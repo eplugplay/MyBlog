@@ -4,7 +4,7 @@
 <div id="container">
 <head>
     <meta charset="utf-8" />
-    <!DOCTYPE html>
+
     @using MyBlog.HtmlHelpers
     <title>@ViewBag.Title - My ASP.NET MVC Application</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -45,11 +45,20 @@
                 </div>
             </div>
         </header>
+    <!--<div id="bodyInner">-->
+       <!-- <section class="content-wrapper clear-fix"> -->
     <div id="bodyInner">
-        <section class="content-wrapper clear-fix">
-                @RenderBody()
-            </section>
+       <!-- <div class="SidebarsMain"> -->
+            @Html.Partial("_Search")
+            @* Call the child action to render the sidebar *@
+            @Html.Action("Sidebars")
+       <!-- </div>-->
+        @RenderBody()
     </div>
+
+
+          <!--  </section> -->
+   <!--</div> -->
     <footer>
             <div class="content-wrapper">
                 <div class="float-left">
