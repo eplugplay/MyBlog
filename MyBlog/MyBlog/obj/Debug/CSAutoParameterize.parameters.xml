@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MsSqlConnection-Web.config Connection String" description="MsSqlConnection Connection String used in web.config by the application to access the database." defaultvalue="Data Source=SQL5007.Smarterasp.net;Initial Catalog=DB_9AE46C_blog;User Id=DB_9AE46C_blog_admin;Password=kings2006;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\SteveYi\\Documents\\Visual\ Studio\ 2010\\Projects\\MyBlog\\MyBlog\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MsSqlConnection']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultvalue="Data Source=.\SQLEXPRESS;Initial Catalog=aspnet-MyBlog-20140208171210;Integrated Security=SSPI" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\SteveYi\\Documents\\Visual\ Studio\ 2010\\Projects\\MyBlog\\MyBlog\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="MyBlogConnectionString-Web.config Connection String" description="MyBlogConnectionString Connection String used in web.config by the application to access the database." defaultvalue="server=MYSQL5005.Smarterasp.net; Port=3306; Database=db_9ae46c_myblog;Uid=9ae46c_myblog;Password=kings2006;pooling=true;AllowBatch=true;AllowUserVariables=true" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\SteveYi\\Documents\\Visual\ Studio\ 2010\\Projects\\MyBlog\\MyBlog\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MyBlogConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="db_9ae46c_myblogEntities-Web.config Connection String" description="db_9ae46c_myblogEntities Connection String used in web.config by the application to access the database." defaultvalue="metadata=res://*/Models.MainDbEntities.csdl|res://*/Models.MainDbEntities.ssdl|res://*/Models.MainDbEntities.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=MYSQL5005.Smarterasp.net;User Id=9ae46c_myblog;password=kings2006;Persist Security Info=True;database=db_9ae46c_myblog&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\SteveYi\\Documents\\Visual\ Studio\ 2010\\Projects\\MyBlog\\MyBlog\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='db_9ae46c_myblogEntities']/@connectionString" />
+  </parameter>
+</parameters>

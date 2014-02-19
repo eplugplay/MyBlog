@@ -1,0 +1,15 @@
+﻿<div id"search-form">
+@using (Html.BeginForm(
+    "Search",           // action
+    "Blog",             // controller
+    FormMethod.Get,     // method
+    new { id = "search-form" })) // html attributes
+{
+    <p>
+        @Html.TextBox("s")
+    </p>
+    <p>
+        <input value="Search" type="submit">
+    </p>
+}
+</div>
