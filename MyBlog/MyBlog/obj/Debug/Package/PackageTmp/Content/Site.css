@@ -21,7 +21,7 @@
 #container {
     /*width: 1060px;*/
     position: relative;
-    width: 1360px;
+    width: 960px;
     height: 100%;
     overflow: hidden;
     /*background-color : green;*/
@@ -44,9 +44,23 @@ body {
 }
 */
 
+#bodyInner
+{
+    font-size:large;
+    padding-left:20px;
+    padding-right:20px;
+    max-width: 960px;
+    height: 400px;
+    background-color: #efeeef;
+    clear: both;
+    padding-bottom: 35px;
+    border-top-left-radius:15px;
+    border-top-right-radius:5px;
+}
+
 body 
 {
-  height: 350px auto;
+ height: 100% auto;
 }
 
 a {
@@ -136,16 +150,17 @@ border: none;
     max-width: 960px;
 }
 
+/*
 #body {
     background-color: #efeeef;
     clear: both;
-    /*width: 80%;*/
     padding-bottom: 35px;
     border-top-left-radius:15px;
     border-top-right-radius:15px;
     margin-left:auto;
     margin-right:auto;
-}
+    } */
+
 
     .main-content {
         background: url("../Images/accent.png") no-repeat;
@@ -292,7 +307,7 @@ ul#menu li.selected a {color:#000;}
         }
 
         .featured p {
-            font-size: 1.1em;
+            font-size: 1.0em;
         }
 
 /* page titles */
@@ -854,10 +869,17 @@ tr.pager td {
 { float: right; }
 
 .post .row
-{ clear: both; }
+{ 
+    clear: both;
+}
 
+/*each page post*/
 .post .post-body
-{ margin-top: 25px; clear: both; }
+{ 
+    font-size:large;
+    margin-top: 25px;
+    clear: both; 
+}
 
 .post .post-foot
 { float: right; }

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <contentPath path="C:\Users\SteveYi\Documents\Visual Studio 2010\Projects\MyBlog\MyBlog\obj\Debug\Package\PackageTmp" />
-  <setAcl path="C:\Users\SteveYi\Documents\Visual Studio 2010\Projects\MyBlog\MyBlog\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="C:\Users\SteveYi\Documents\Visual Studio 2010\Projects\MyBlog\MyBlog\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <contentPath path="C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\Package\PackageTmp" />
+  <setAcl path="C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
 </sitemanifest>

@@ -16,16 +16,20 @@
         /*height: 100%;*/
 }
 
-#container {
-    width: 1360px;
+#container 
+{
+    /*width: 1060px;*/
     position: relative;
+    width: 960px;
     height: 100%;
     overflow: hidden;
     /*background-color : green;*/
     margin-left:auto;
     margin-right:auto;
     font-size: 1.1em;
+    padding: 30px 30px 0px 0px;
 }
+
 
 /*
 body {
@@ -76,16 +80,17 @@ mark {
     float: left;
 }
 
+/*top tab position*/
 .float-right {
     float: right;
 }
 
 .clear-fix:after {
-    content: ".";
+    /*content: ".";
     clear: both;
     display: block;
     height: 0;
-    visibility: hidden;
+    visibility: hidden;*/
 }
 
 h1, h2, h3,
@@ -132,11 +137,14 @@ h5, h6 {
 
 #bodyInner
 {
+    padding-left:20px;
+    padding-right:20px;
+    max-width: 1360px;
     background-color: #efeeef;
     clear: both;
     padding-bottom: 35px;
     border-top-left-radius:15px;
-    border-top-right-radius:15px;
+    border-top-right-radius:5px;
 }
 
 
@@ -264,6 +272,7 @@ ul#menu li.selected a {color:#000;}
 .featured {
     background-color: #fff;
 }
+
 
     .featured .content-wrapper {
         background-color: #7ac0da;
@@ -816,18 +825,28 @@ tr.pager td {
         }
 }
 
-/*blog*/
+/*************************************************blog**********************************************/
+/*move search bar here*/
 #search-form
-{ float: left; margin-left:680px; width:500px; clear: both; }
+{ 
+  float: right;
+  width:500px;
+  clear: both;
+  left: 580px;
+  top:  200px;
+  position:absolute;
+}
 
 #search-form p
 { display:inline; }
 
 .search
-{ color: #555;
+{ 
+  color: #555;
   border: 1px solid #DDD;
   width: 334px;
-  padding: 5px;}
+  padding: 5px;
+}
 
 .pager
 { margin-top:20px; clear: right; }
@@ -838,6 +857,7 @@ tr.pager td {
  .post .post-title
 { display: inline-block; }
   
+  /*under each title of post header*/
 .post .post-category, .post-tags
   { float: left; margin-right: 10px; }
   
@@ -853,22 +873,44 @@ tr.pager td {
 .post .row
 { clear: both; }
 
+/*text body of each post*/
 .post .post-body
-{ margin-top: 25px; margin-right:480px; clear: both; }
+{ 
+  font-size: large;
+  margin-top: 25px;
+  width: 70%;
+  /*margin-right:480px;*/
+  clear: both; 
+}
 
 .post .post-foot
 { float: left; }
 
+/*move side bar here*/
 #sidebars
-{ float: right; }
+{ 
+  float: right;
+  position:absolute; 
+  float:right;
+  top: 260px;
+  left: 720px;
+}
 
+/*categories up/down move here*/
 .sidebar
-{ width: 200px;
-  padding: 0 15px 20px 15px;
-   }
+{ 
+  width: 150px;
+  padding: 0 15px 0px 15px;
+  position:relative;
+}
  
+ /* change side bar font size here*/
 .sidebar h3
-{ margin-left: 20px; font-size: 150%; }
+{ 
+    margin-left: 20px;
+    font-size: 150%; 
+    width:300px;
+}
 
 .sidebar ul
 { width: 178px;
@@ -888,12 +930,15 @@ tr.pager td {
 .sidebar li a.selected
 { color: #444;}
 
+/*tags up/down move here*/
 .tags
-{ padding: 0 0 20px 20px; }
+{ padding: 0 0 10px 20px; }
 
 .tags a
 { margin: 3px;
-  display: inline-block; }
+  padding: 0 0 0 35px;
+  background: transparent url(images/link.png) no-repeat left center;
+  display: block; }
 
 #contentBlog
 { text-align: left;

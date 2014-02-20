@@ -20,7 +20,7 @@
 {
     /*width: 1060px;*/
     position: relative;
-    width: 1360px;
+    width: 960px;
     height: 100%;
     overflow: hidden;
     /*background-color : green;*/
@@ -42,11 +42,6 @@ body {
     padding: 0;
 }
 */
-
-#SideBarsMain
-{
-    float:right;
-}
 
 body 
 {
@@ -85,6 +80,7 @@ mark {
     float: left;
 }
 
+/*top tab position*/
 .float-right {
     float: right;
 }
@@ -148,7 +144,7 @@ h5, h6 {
     clear: both;
     padding-bottom: 35px;
     border-top-left-radius:15px;
-    border-top-right-radius:15px;
+    border-top-right-radius:5px;
 }
 
 
@@ -276,6 +272,7 @@ ul#menu li.selected a {color:#000;}
 .featured {
     background-color: #fff;
 }
+
 
     .featured .content-wrapper {
         background-color: #7ac0da;
@@ -835,7 +832,7 @@ tr.pager td {
   float: right;
   width:500px;
   clear: both;
-  left: 970px;
+  left: 580px;
   top:  200px;
   position:absolute;
 }
@@ -879,8 +876,9 @@ tr.pager td {
 /*text body of each post*/
 .post .post-body
 { 
-  font-size:x-large;
+  font-size: large;
   margin-top: 25px;
+  width: 70%;
   /*margin-right:480px;*/
   clear: both; 
 }
@@ -895,14 +893,14 @@ tr.pager td {
   position:absolute; 
   float:right;
   top: 260px;
-  left:980px;
+  left: 720px;
 }
 
 /*categories up/down move here*/
 .sidebar
 { 
   width: 150px;
-  padding: 0 15px 20px 15px;
+  padding: 0 15px 0px 15px;
   position:relative;
 }
  
@@ -910,7 +908,7 @@ tr.pager td {
 .sidebar h3
 { 
     margin-left: 20px;
-    font-size: 200%; 
+    font-size: 150%; 
     width:300px;
 }
 
@@ -934,7 +932,7 @@ tr.pager td {
 
 /*tags up/down move here*/
 .tags
-{ padding: 0 0 20px 20px; }
+{ padding: 0 0 10px 20px; }
 
 .tags a
 { margin: 3px;
