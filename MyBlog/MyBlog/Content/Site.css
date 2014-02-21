@@ -674,7 +674,7 @@ tr.pager td {
     ----------------------------------------------------------*/
     header .float-left,
     header .float-right {
-        float: none;
+        float: right;
     }
 
     /* logo */
@@ -685,29 +685,28 @@ tr.pager td {
 
     /* login */
     #login {
-        font-size: .85em;
-        margin: 0 0 12px;
-        text-align: center;
+    display: block;
+    font-size: .85em;
+    margin: 0 0 10px;
+    text-align: right;
+    font-size: 1.1em;
     }
 
         #login ul {
-            margin: 5px 0;
-            padding: 0;
+        margin: 0;
         }
 
         #login li {
-            display: inline;
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        display: inline;
+        list-style: none;
         }
 
         #login a {
-            background: none;
-            color: #999;
-            font-weight: 600;
-            margin: 2px;
-            padding: 0;
+        background-color: #d3dce0;
+        margin-left: 10px;
+        margin-right: 3px;
+        padding: 2px 3px;
+        text-decoration: none;
         }
 
         #login a:hover {
@@ -746,6 +745,33 @@ tr.pager td {
     .featured .content-wrapper {
         padding: 10px;
     }
+    
+    #bodyInner
+  {
+    font-size:large;
+    padding-left:20px;
+    padding-right:20px;
+    max-width: 460px;
+    height: 500px;
+    background-color: #efeeef;
+    clear: both;
+    padding-bottom: 35px;
+    border-top-left-radius:15px;
+    border-top-right-radius:5px;
+  }
+  
+  #container {
+    /*width: 1060px;*/
+    position: relative;
+    max-width: 500px;
+    height: 100%;
+    overflow: hidden;
+    /*background-color : green;*/
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 1.1em;
+    padding: 30px 30px 0px 0px;
+}
 
     /* page content */
     article, aside {
@@ -824,7 +850,7 @@ tr.pager td {
 
     footer {
         text-align: center;
-        height: auto;
+        max-height: 70px;
         padding: 10px 0;
     }
 
