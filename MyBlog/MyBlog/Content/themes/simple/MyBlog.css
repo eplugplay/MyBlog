@@ -10,7 +10,7 @@
         background-image:-ms-linear-gradient(top,#3EA99F,#FFFFFF);
         background-image:linear-gradient(top,#3EA99F,#FFFFFF);
         background-repeat: no-repeat;
-        /*background: linear-gradient(0deg, white, #6DD1D7 50%) no-repeat;*/
+
         margin: 0;
         padding: 0;
         /*height: 100%;*/
@@ -20,7 +20,7 @@
 {
     /*width: 1060px;*/
     position: relative;
-    width: 960px;
+    max-width: 1000px;
     height: 100%;
     overflow: hidden;
     /*background-color : green;*/
@@ -832,7 +832,7 @@ tr.pager td {
   float: right;
   width:500px;
   clear: both;
-  left: 580px;
+  left: 620px;
   top:  200px;
   position:absolute;
 }
@@ -893,7 +893,7 @@ tr.pager td {
   position:absolute; 
   float:right;
   top: 260px;
-  left: 720px;
+  left: 770px;
 }
 
 /*categories up/down move here*/

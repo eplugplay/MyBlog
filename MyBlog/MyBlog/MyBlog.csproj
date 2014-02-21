@@ -273,6 +273,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\simple\admin.css" />
+    <Content Include="Content\themes\simple\AdminPage.css" />
     <Content Include="Content\themes\simple\images\arrow.png" />
     <Content Include="Content\themes\simple\images\back.png" />
     <Content Include="Content\themes\simple\images\bullet.png" />
@@ -1422,6 +1423,7 @@
     <None Include="Content\themes\simple\jqueryuicustom\development-bundle\ui.tabs.jquery.json" />
     <None Include="Content\themes\simple\jqueryuicustom\development-bundle\ui.tooltip.jquery.json" />
     <None Include="Content\themes\simple\jqueryuicustom\development-bundle\ui.widget.jquery.json" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
