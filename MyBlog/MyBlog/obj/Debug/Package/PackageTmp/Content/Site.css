@@ -142,6 +142,22 @@ h5, h6 {
 img {
 border: none;
 } 
+
+#FbImg
+{
+    width:40px;
+}
+
+#LinkedInImg
+{
+    width:40px;
+}
+
+#FooterImg
+{
+    float:right;
+}
+
 /* main layout
 ----------------------------------------------------------*/
 .content-wrapper {
@@ -712,7 +728,7 @@ tr.pager td {
         #login a:hover {
             color: #333;
         }
-
+        
     /* menu */
     nav {
         margin-bottom: 5px;
@@ -729,6 +745,21 @@ tr.pager td {
             padding: 0;
         }
 
+
+#FbImg
+{
+    width:25px;
+}
+
+#LinkedInImg
+{
+    width:25px;
+}
+
+#FooterImg
+{
+    float:right;
+}
 
     /* main layout
     ----------------------------------------------------------*/
@@ -748,7 +779,7 @@ tr.pager td {
     
     #bodyInner
   {
-    font-size:large;
+    font-size:small;
     padding-left:20px;
     padding-right:20px;
     max-width: 460px;
@@ -769,7 +800,7 @@ tr.pager td {
     /*background-color : green;*/
     margin-left:auto;
     margin-right:auto;
-    font-size: 1.1em;
+    font-size: .7em;
     padding: 30px 30px 0px 0px;
 }
 
@@ -840,17 +871,20 @@ tr.pager td {
         width: auto;
     }
 
+h1 {
+    font-size: 1.2em;
+}
 
     /* footer
     ----------------------------------------------------------*/
     footer .float-left,
     footer .float-right {
-        float: none;
+        float: left;
     }
 
     footer {
         text-align: center;
-        max-height: 70px;
+        max-height: 40px;
         padding: 10px 0;
     }
 

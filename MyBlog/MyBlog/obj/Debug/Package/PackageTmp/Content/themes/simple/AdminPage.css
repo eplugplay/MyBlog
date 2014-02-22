@@ -18,18 +18,31 @@
 
 #container 
 {
-    /*width: 1060px;*/
     position: relative;
     max-width: 1550px;
     height: 100%;
     overflow: hidden;
-    /*background-color : green;*/
     margin-left:auto;
     margin-right:auto;
     font-size: 1.1em;
     padding: 30px 30px 0px 0px;
 }
 
+#FbImg
+{
+    width:40px;
+}
+
+#LinkedInImg
+{
+    width:40px;
+}
+
+#FooterImg
+{
+    float:right;
+    padding-right:20px;
+}
 
 /*
 body {
@@ -194,12 +207,14 @@ footer {
 
 /* login
 ----------------------------------------------------------*/
+
+/*Login user name email*/
 #login {
     display: block;
     font-size: .85em;
     margin: 0 0 10px;
     text-align: right;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
     #login a {
@@ -258,7 +273,7 @@ footer {
 ----------------------------------------------------------*/
 ul#menu {padding:0;position:relative;margin:0 0 0 15px ;text-align:right;}
 /* tab background color */
-ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:1.3em;}
+ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:1.5em;}
 /* tab font color */
 ul#menu li a {padding:10px 20px;font-weight:bold;text-decoration:none;color:#36ae00;background: transparent no-repeat right -150px;display:block;}
 ul#menu li a:hover {text-decoration:none;color:#000;}
@@ -674,31 +689,30 @@ tr.pager td {
         text-align: center;
     }
 
-    /* login */
+      /* login */
     #login {
-        font-size: .85em;
-        margin: 0 0 12px;
-        text-align: center;
+    display: block;
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    text-align: right;
+    font-size: 1.1em;
     }
 
         #login ul {
-            margin: 5px 0;
-            padding: 0;
+        margin: 0;
         }
 
         #login li {
-            display: inline;
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        display: inline;
+        list-style: none;
         }
 
         #login a {
-            background: none;
-            color: #999;
-            font-weight: 600;
-            margin: 2px;
-            padding: 0;
+        background-color: #d3dce0;
+        margin-left: 10px;
+        margin-right: 3px;
+        padding: 2px 3px;
+        text-decoration: none;
         }
 
         #login a:hover {
@@ -743,6 +757,30 @@ tr.pager td {
         float: none;
         width: 100%;
     }
+    
+        #bodyInner
+  {
+    font-size:large;
+    padding-left:20px;
+    padding-right:20px;
+    max-width: 780px;
+    background-color: #efeeef;
+    clear: both;
+    padding-bottom: 35px;
+    border-top-left-radius:15px;
+    border-top-right-radius:5px;
+  }
+  
+  #container {
+    position: relative;
+    max-width: 500px;
+    height: 100%;
+    overflow: hidden;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: .7em;
+    padding: 30px 30px 0px 0px;
+}
 
     /* ordered list */
     ol.round {
@@ -782,6 +820,22 @@ tr.pager td {
             font-size: 1.5em;
             font-weight: 600;
         }
+        
+#FbImg
+{
+    width:40px;
+}
+
+#LinkedInImg
+{
+    width:40px;
+}
+
+#FooterImg
+{
+    float:right;
+    padding-right:5px;
+}
 
     /* forms */
     input {
@@ -805,23 +859,172 @@ tr.pager td {
         float: none;
         width: auto;
     }
+    
+    
+       /* MyBlog section mobile----------------------------------*/
 
+input, textarea {
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    color: #333;
+    font-size: .5em;
+    margin: 5x 0 6px 0;
+    padding: 0px;
+    width: 90px;
+}
+
+textarea {
+    font-family: inherit;
+    width: 500px;
+}
+
+#search-form
+{ 
+  float: right;
+  width: 180px;
+  clear: both;
+  left: 165px;
+  top:  85px;
+  position:absolute;
+}
+
+#search-form p
+{ display:inline;
+ }
+
+.search
+{ 
+  color: #555;
+  border: 1px solid #DDD;
+  width: 6px;
+  padding: 5px;
+}
+
+/* Search button*/
+    input[type="submit"],
+    input[type="button"],
+    button {
+        background-color: #d3dce0;
+        border: 1px solid #787878;
+        cursor: pointer;
+        font-size: .5em;
+        font-weight: 600;
+        padding: 0px;
+        margin-right: 0px;
+        width: 50px;
+    }
+    
+    h1 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: .8em;
+}
+
+/*Title of each post*/
+ .post .post-title
+{ display: inline-block; font-size:medium; }
+  
+  /*under each title of post header*/
+.post .post-category, .post-tags
+  { float: left; margin-right: 10px; font-size: x-small; }
+  
+.post .tags-div
+{ font-style: italic; display:inline; }
+
+.post .tags-div a
+{ margin-right: 5px; }
+
+.post .posted-date
+{ float: left; font-size:x-small; }
+
+.post .row
+{ clear: both; }
+
+/*text body of each post*/
+.post .post-body
+{ 
+  font-size: small;
+  margin-top: 25px;
+  width: 40%;
+  /*margin-right:480px;*/
+  clear: both; 
+}
+
+.post .post-foot
+{ float: left; }
+
+/*move side bar here*/
+#sidebars
+{ 
+  float: right;
+  position:absolute; 
+  float:right;
+  top: 220px;
+  left: 770px;
+}
+
+/*categories up/down move here*/
+.sidebar
+{ 
+  width: 150px;
+  padding: 0 15px 0px 15px;
+  position:relative;
+}
+ 
+ /* change side bar font size here*/
+.sidebar h3
+{ 
+    margin-left: 20px;
+    font-size: 40%; 
+    width: 150px;
+}
+
+.sidebar ul
+{ width: 178px;
+  padding: 4px 0 0 0;
+  margin: 4px 0 4px 0;}
+
+.sidebar li
+{ list-style: none;
+  padding: 0 0 7px 0; }
+
+.sidebar li a, .sidebar li a:hover
+{ padding: 0 0 0 35px;
+  display: block;
+  background: transparent url(images/link.png) no-repeat left center;
+  border: 0;}
+
+.sidebar li a.selected
+{ color: #444;}
+
+/*tags up/down move here*/
+.tags
+{ padding: 0 0 10px 20px; }
+
+.tags a
+{ margin: 3px;
+  padding: 0 0 0 35px;
+  background: transparent url(images/link.png) no-repeat left center;
+  display: block; }
 
     /* footer
     ----------------------------------------------------------*/
     footer .float-left,
     footer .float-right {
-        float: none;
+        float: left;
     }
 
     footer {
         text-align: center;
-        height: auto;
+        max-height: 40px;
         padding: 10px 0;
     }
 
         footer p {
             margin: 0;
         }
+        
 }
 
