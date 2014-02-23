@@ -806,7 +806,6 @@ tr.pager td {
     header .float-right {
         float: right;
         font-size:x-small;
-        max-width: 400px;
     }
 
     /* logo */
@@ -914,7 +913,6 @@ ul#menu li.selected a {color:#000;}
     
    #bodyInner
   {
-    font-size:large;
     padding-left:20px;
     padding-right:20px;
     max-width: 600px;

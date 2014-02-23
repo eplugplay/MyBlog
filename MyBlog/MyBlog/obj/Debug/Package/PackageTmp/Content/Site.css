@@ -780,6 +780,7 @@ ul#menu li.selected a {color:#000;}
     max-width: 600px;
     background-color: #efeeef;
     clear: both;
+    height: 400px;
     padding-bottom: 35px;
     border-top-left-radius:15px;
     border-top-right-radius:5px;
