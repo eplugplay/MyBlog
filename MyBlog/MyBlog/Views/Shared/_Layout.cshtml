@@ -48,9 +48,7 @@
         </header>
     <div id="bodyInner">
         @RenderSection("featured", required: false)
-       <!-- <section class="content-wrapper clear-fix"> -->
                 @RenderBody()
-         <!--   </section> -->
     </div>
     @RenderSection("scripts", required: false)
             <footer>
@@ -58,11 +56,12 @@
                 <div class="float-left">
                     <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
                 </div>
+                </div>
                 <div id="FooterImg">
                 <a href="http://www.linkedin.com/profile/view?id=121827874&goback=.nmp_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1&trk=spm_pic" target="_blank"><img id="LinkedInImg" src="~/Images/LinkedIn.png" alt="LinkedIn" style="border:0" /></a>
                 <img id="FbImg" style="margin-left:1px;" src="~/Images/Facebook.png" alt="Facebook" style="border:0" />
                 </div>
-            </div>
+            
         </footer>
             </div>
             </html>

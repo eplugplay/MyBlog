@@ -18,15 +18,12 @@
 
 #container 
 {
-    /*width: 1060px;*/
     position: relative;
     max-width: 1000px;
     height: 100%;
     overflow: hidden;
-    /*background-color : green;*/
     margin-left:auto;
     margin-right:auto;
-    font-size: 1.1em;
     padding: 30px 30px 0px 0px;
 }
 
@@ -160,7 +157,8 @@ body {
   padding: 0 0 7px 0; }
 
 .sidebar li a, .sidebar li a:hover
-{ padding: 0 0 0 35px;
+{ 
+  padding: 0 0 0 35px;
   display: block;
   background: transparent url(images/link.png) no-repeat left center;
   border: 0;}
@@ -173,7 +171,8 @@ body {
 { padding: 0 0 10px 20px; }
 
 .tags a
-{ margin: 3px;
+{ 
+  margin: 3px;
   padding: 0 0 0 35px;
   background: transparent url(images/link.png) no-repeat left center;
   display: block; }
@@ -232,10 +231,12 @@ mark {
     float: left;
 }
 
-/*top tab position*/
-.float-right {
-    float: right;
-}
+    /*top tab*/
+    header .float-left,
+    header .float-right {
+        float: right;
+        font-size:medium;
+    }
 
 .clear-fix:after {
     /*content: ".";
@@ -351,7 +352,6 @@ footer {
     font-size: .85em;
     margin: 0 0 10px;
     text-align: right;
-    font-size: 1.1em;
 }
 
     #login a {
@@ -410,13 +410,14 @@ footer {
 ----------------------------------------------------------*/
 ul#menu {padding:0;position:relative;margin:0 0 0 15px ;text-align:right;}
 /* tab background color */
-ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:1.3em;}
+ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:1.5em;}
 /* tab font color */
 ul#menu li a {padding:10px 20px;font-weight:bold;text-decoration:none;color:#36ae00;background: transparent no-repeat right -150px;display:block;}
 ul#menu li a:hover {text-decoration:none;color:#000;}
 ul#menu li a:active {text-decoration:none;color:#009933;}
 ul#menu li.selected {background:#efeeef no-repeat 0 -150px;}
 ul#menu li.selected a {color:#000;}
+
 
 /* page elements
 ----------------------------------------------------------*/
@@ -816,9 +817,12 @@ tr.pager td {
 
     /* header
     ----------------------------------------------------------*/
+    /*top tab*/
     header .float-left,
     header .float-right {
         float: right;
+        font-size:x-small;
+        max-width: 400px;
     }
 
     /* logo */
@@ -833,7 +837,6 @@ tr.pager td {
     font-size: .85em;
     margin: 0 0 10px;
     text-align: right;
-    font-size: 1.1em;
     }
 
         #login ul {
@@ -857,9 +860,22 @@ tr.pager td {
         #login a:hover {
             color: #333;
         }
+        
+                /* TAB MENU   
+----------------------------------------------------------*/
+ul#menu {padding:0;position:relative;margin:0 0 0 15px ;text-align:right;}
+/* tab background color */
+ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:1.1em;}
+/* tab font color */
+ul#menu li a {padding:10px 20px;font-weight:bold;text-decoration:none;color:#36ae00;background: transparent no-repeat right -150px;display:block;}
+ul#menu li a:hover {text-decoration:none;color:#000;}
+ul#menu li a:active {text-decoration:none;color:#009933;}
+ul#menu li.selected {background:#efeeef no-repeat 0 -150px;}
+ul#menu li.selected a {color:#000;}
+
 
     /* menu */
-    nav {
+ /*   nav {
         margin-bottom: 5px;
     }
 
@@ -872,7 +888,7 @@ tr.pager td {
         ul#menu li {
             margin: 0;
             padding: 0;
-        }
+        }*/
 
 #FbImg
 {
@@ -917,7 +933,7 @@ tr.pager td {
     font-size:large;
     padding-left:20px;
     padding-right:20px;
-    max-width: 580px;
+    max-width: 600px;
     background-color: #efeeef;
     clear: both;
     padding-bottom: 35px;
@@ -932,7 +948,6 @@ tr.pager td {
     overflow: hidden;
     margin-left:auto;
     margin-right:auto;
-    font-size: .7em;
     padding: 30px 30px 0px 0px;
 }
 
@@ -1002,6 +1017,8 @@ tr.pager td {
     
     /* MyBlog section mobile----------------------------------*/
 
+
+/*search textbox size*/
 input, textarea {
     border: 1px solid #e2e2e2;
     background: #fff;
@@ -1009,7 +1026,7 @@ input, textarea {
     font-size: .5em;
     margin: 5x 0 6px 0;
     padding: 0px;
-    width: 90px;
+    width: 70px;
 }
 
 textarea {
@@ -1017,13 +1034,14 @@ textarea {
     width: 500px;
 }
 
+/*search textbox and button move here*/
 #search-form
 { 
   float: right;
-  width: 180px;
+  width: 150px;
   clear: both;
-  left: 165px;
-  top:  85px;
+  left: 185px;
+  top:  90px;
   position:absolute;
 }
 
@@ -1057,20 +1075,23 @@ textarea {
     font-size: 1.2em;
 }
 
+h3 {
+    font-size: .8em;
+}
 
 /*Title of each post*/
  .post .post-title
-{ display: inline-block; font-size:small; }
+{ display: inline-block; font-size:x-small; max-width:200px; }
   
   /*under each title of post header*/
 .post .post-category, .post-tags
-  { float: left; margin-right: 10px; font-size: x-small; }
+  { float: left; margin-right: 1px; font-size: xx-small; max-width:200px;}
   
 .post .tags-div
 { font-style: italic; display:inline; }
 
 .post .tags-div a
-{ margin-right: 5px; }
+{ margin-right: 2px; }
 
 .post .posted-date
 { float: left; font-size:x-small; }
@@ -1083,7 +1104,8 @@ textarea {
 { 
   font-size: small;
   margin-top: 25px;
-  width: 40%;
+  max-width: 300px;
+  /*width: 40%;*/
   /*margin-right:480px;*/
   clear: both; 
 }
@@ -1097,8 +1119,8 @@ textarea {
   float: right;
   position:absolute; 
   float:right;
-  top: 220px;
-  left: 770px;
+  top: 210px;
+  left: 368px;
 }
 
 /*categories up/down move here*/
@@ -1109,25 +1131,28 @@ textarea {
   position:relative;
 }
  
- /* change side bar font size here*/
+ /* change side bar title font size here*/
 .sidebar h3
 { 
     margin-left: 20px;
-    font-size: 40%; 
+    font-size: 60%; 
     width: 150px;
 }
 
 .sidebar ul
-{ width: 178px;
+{ width: 108px;
   padding: 4px 0 0 0;
   margin: 4px 0 4px 0;}
 
 .sidebar li
 { list-style: none;
-  padding: 0 0 7px 0; }
+  padding: 0 0 3px 0; }
 
+/*categories*/
 .sidebar li a, .sidebar li a:hover
-{ padding: 0 0 0 35px;
+{ 
+  font-size:xx-small;  
+  padding: 0 0 0 22px;
   display: block;
   background: transparent url(images/link.png) no-repeat left center;
   border: 0;}
@@ -1137,13 +1162,14 @@ textarea {
 
 /*tags up/down move here*/
 .tags
-{ padding: 0 0 10px 20px; }
+{ padding: 0 15px 0px 15px; }
 
 .tags a
-{ margin: 3px;
-  padding: 0 0 0 35px;
+{ 
+  font-size:xx-small;
+  padding: 0 0 0 22px;
   background: transparent url(images/link.png) no-repeat left center;
-  display: block; }
+  border: 0; }
 
     /* footer
     ----------------------------------------------------------*/

@@ -5,12 +5,10 @@
         Layout = "~/Views/Shared/_LayoutBlog.cshtml";
     }
 
- <br />
-
+    <br />
   <h1>@ViewBag.Title</h1>
  
   @Html.Partial("_Pager", Model)
-
 
 
 <head>
@@ -24,6 +22,12 @@
     {
       @Html.Partial("_PostTemplate", post)
     }
+        if (Model.PostType == "Default")
+        {
+            @Html.Partial("_Search")
+            @* Call the child action to render the sidebar *@
+            @Html.Action("Sidebars")
+        }
   }
   else
   {
@@ -31,10 +35,6 @@
   }
    
   @Html.Partial("_Pager", Model)
-
-              @Html.Partial("_Search")
-            @* Call the child action to render the sidebar *@
-            @Html.Action("Sidebars")
 
 
 

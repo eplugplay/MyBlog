@@ -12,6 +12,7 @@ namespace MyBlog.Models
         {
             Posts = blogRepository.Posts(p - 1, 10);
             TotalPosts = blogRepository.TotalPosts();
+            PostType = "Default";
         }
 
 
@@ -21,6 +22,7 @@ namespace MyBlog.Models
             Posts = blogRepository.PostsForCategory(categorySlug, p - 1, 10);
             TotalPosts = blogRepository.TotalPostsForCategory(categorySlug);
             Category = blogRepository.Category(categorySlug);
+            PostType = "Category";
         }
 
         public ListViewModel(IBlogRepository blogRepository,
@@ -32,16 +34,19 @@ namespace MyBlog.Models
                     Posts = blogRepository.PostsForCategory(text, p - 1, 10);
                     TotalPosts = blogRepository.TotalPostsForCategory(text);
                     Category = blogRepository.Category(text);
+                    PostType = "Category";
                     break;
                 case "Tag":
                     Posts = blogRepository.PostsForTag(text, p - 1, 10);
                     TotalPosts = blogRepository.TotalPostsForTag(text);
                     Tag = blogRepository.Tag(text);
+                    PostType = "Tag";
                     break;
                 default:
                     Posts = blogRepository.PostsForSearch(text, p - 1, 10);
                     TotalPosts = blogRepository.TotalPostsForSearch(text);
                     Search = text;
+                    PostType = "Default";
                     break;
             }
         }
@@ -49,6 +54,7 @@ namespace MyBlog.Models
         public IList<Post> Posts { get; private set; }
         public int TotalPosts { get; private set; }
         public Category Category { get; private set; }
+        public string PostType { get; private set; }
         public Tag Tag { get; private set; }
         public string Search { get; private set; }
     }

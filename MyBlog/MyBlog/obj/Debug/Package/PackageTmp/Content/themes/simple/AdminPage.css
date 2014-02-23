@@ -24,7 +24,6 @@
     overflow: hidden;
     margin-left:auto;
     margin-right:auto;
-    font-size: 1.1em;
     padding: 30px 30px 0px 0px;
 }
 
@@ -93,10 +92,11 @@ mark {
     float: left;
 }
 
-/*top tab position*/
-.float-right {
-    float: right;
-}
+    /*top tab*/
+    header .float-left,
+    header .float-right {
+        float: right;
+    }
 
 .clear-fix:after {
     /*content: ".";
@@ -152,7 +152,7 @@ h5, h6 {
 {
     padding-left:20px;
     padding-right:20px;
-    max-width: 1800px;
+    max-width: 1600px;
     background-color: #efeeef;
     clear: both;
     padding-bottom: 35px;
@@ -207,14 +207,11 @@ footer {
 
 /* login
 ----------------------------------------------------------*/
-
-/*Login user name email*/
 #login {
     display: block;
-    font-size: .85em;
+    font-size: 1em;
     margin: 0 0 10px;
     text-align: right;
-    font-size: 1.3em;
 }
 
     #login a {
@@ -273,7 +270,7 @@ footer {
 ----------------------------------------------------------*/
 ul#menu {padding:0;position:relative;margin:0 0 0 15px ;text-align:right;}
 /* tab background color */
-ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:1.5em;}
+ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:1.75em;}
 /* tab font color */
 ul#menu li a {padding:10px 20px;font-weight:bold;text-decoration:none;color:#36ae00;background: transparent no-repeat right -150px;display:block;}
 ul#menu li a:hover {text-decoration:none;color:#000;}
@@ -322,7 +319,9 @@ hgroup.title h2 {
     margin-left: 3px;
 }
 
+
 /* features */
+
 section.feature {
     float: left;
     position: relative;
@@ -678,9 +677,11 @@ tr.pager td {
 
     /* header
     ----------------------------------------------------------*/
+    /*top tab*/
     header .float-left,
     header .float-right {
-        float: none;
+        float: right;
+        font-size:x-small;
     }
 
     /* logo */
@@ -724,6 +725,7 @@ tr.pager td {
         margin-bottom: 5px;
     }
 
+/*
     ul#menu {
         margin: 0;
         padding: 0;
@@ -734,7 +736,18 @@ tr.pager td {
             margin: 0;
             padding: 0;
         }
-
+*/
+                /* TAB MENU   
+----------------------------------------------------------*/
+ul#menu {padding:0;position:relative;margin:0 0 0 15px ;text-align:right;}
+/* tab background color */
+ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:.9em;}
+/* tab font color */
+ul#menu li a {padding:10px 20px;font-weight:bold;text-decoration:none;color:#36ae00;background: transparent no-repeat right -150px;display:block;}
+ul#menu li a:hover {text-decoration:none;color:#000;}
+ul#menu li a:active {text-decoration:none;color:#009933;}
+ul#menu li.selected {background:#efeeef no-repeat 0 -150px;}
+ul#menu li.selected a {color:#000;}
 
     /* main layout
     ----------------------------------------------------------*/
@@ -924,11 +937,11 @@ h2 {
 
 /*Title of each post*/
  .post .post-title
-{ display: inline-block; font-size:medium; }
+{ display: inline-block; font-size:x-small; max-width:200px; }
   
   /*under each title of post header*/
 .post .post-category, .post-tags
-  { float: left; margin-right: 10px; font-size: x-small; }
+  { float: left; margin-right: 1px; font-size: xx-small; max-width:200px;}
   
 .post .tags-div
 { font-style: italic; display:inline; }
