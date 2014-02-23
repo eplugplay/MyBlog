@@ -10,11 +10,8 @@
         background-image:-ms-linear-gradient(top,#3EA99F,#FFFFFF);
         background-image:linear-gradient(top,#3EA99F,#FFFFFF);
         background-repeat: no-repeat;
-
-    margin: 0;
-    padding: 0;
-    /*height: 100%;*/
-    /*height:600px;*/
+        margin: 0;
+        padding: 0;
 }
 
 #container {
@@ -185,8 +182,6 @@ footer
     background-color: #e2e2e2;
     font-size: .8em;
     height: 100px;
-    margin-left:auto;
-    margin-right:auto;
     border-bottom-left-radius:15px;
     border-bottom-right-radius:15px;
 }
