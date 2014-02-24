@@ -1,18 +1,15 @@
 ﻿html {
-    /*background:url("../Images/bamboo.png") no-repeat;
-    background-repeat:repeat;*/
+    background:url("/Images/turquoise-pattern.gif");
+    background-repeat:repeat;
     /*background-color : black;*/
         /*background-color: #3EA99F;*/
         /* IE10 Consumer Preview */ 
-        background-image:-moz-linear-gradient(top,#3EA99F,#FFFFFF);
+      /*  background-image:-moz-linear-gradient(top,#3EA99F,#FFFFFF);
         background-image:-webkit-linear-gradient(top,#3EA99F,#FFFFFF);
         background-image:-o-linear-gradient(top,#3EA99F,#FFFFFF);
         background-image:-ms-linear-gradient(top,#3EA99F,#FFFFFF);
         background-image:linear-gradient(top,#3EA99F,#FFFFFF);
-        background-repeat: no-repeat;
-        margin: 0;
-        padding: 0;
-        /*height: 100%;*/
+        background-repeat: no-repeat; */
 }
 
 #container {
@@ -25,7 +22,6 @@
     padding: 30px 12px 0px 0px;
 }
 
-
 #bodyInner
 {
     padding-left:20px;
@@ -34,6 +30,8 @@
     background-color: #efeeef;
     clear: both;
     padding-bottom: 35px;
+    margin-left:auto;
+    margin-right:auto;
     border-top-left-radius:15px;
     border-top-right-radius:5px;
 }
@@ -41,7 +39,7 @@
   
 body 
 {
- height: 100% auto;
+ height: 100%;
 }
 
 
@@ -129,7 +127,6 @@ body
 { 
   float: right;
   position:absolute; 
-  float:right;
   top: 260px;
   left: 770px;
 }
@@ -234,6 +231,7 @@ mark {
     header .float-right {
         float: right;
         font-size:medium;
+        position: inherit;
     }
 
 .clear-fix:after {
@@ -286,13 +284,6 @@ h5, h6 {
     max-width: 960px;
 }
 
-
-#main {padding:30px 30px 15px 30px;background:#fff no-repeat;margin-bottom:30px;_height:1px;clear:both;position:relative;width:890px; font-size: 1.1em;}
-    .main-content {
-        background: url("../Images/accent.png") no-repeat;
-        padding-left: 10px;
-        padding-top: 30px;
-    }
 
     .featured + .main-content {
         background: url("../Images/heroAccent.png") no-repeat;
@@ -392,7 +383,7 @@ footer {
         */
         /* TAB MENU   
 ----------------------------------------------------------*/
-ul#menu {padding:0;position:relative;margin:0 0 0 15px ;text-align:right;}
+ul#menu {padding:0;position:relative;margin:0 0 0 15px;text-align:right;}
 /* tab background color */
 ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:1.5em;}
 /* tab font color */
@@ -1067,7 +1058,7 @@ h3 {
   
   /*under each title of post header*/
 .post .post-category, .post-tags
-  { float: left; margin-right: 1px; font-size: xx-small; max-width:200px;}
+  { float: left; margin-right: 1px; font-size: xx-small; max-width:150px;}
   
 .post .tags-div
 { font-style: italic; display:inline; }

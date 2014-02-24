@@ -46,7 +46,7 @@ namespace MyBlog.Models
                     Posts = blogRepository.PostsForSearch(text, p - 1, 10);
                     TotalPosts = blogRepository.TotalPostsForSearch(text);
                     Search = text;
-                    PostType = "Default";
+                    PostType = "Search";
                     break;
             }
         }

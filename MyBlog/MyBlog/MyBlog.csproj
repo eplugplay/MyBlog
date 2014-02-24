@@ -870,10 +870,14 @@
     <Content Include="Content\themes\simple\MyBlog.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Apple.png" />
+    <Content Include="Images\blue-line.gif" />
     <Content Include="Images\Facebook.png" />
+    <Content Include="Images\green-pattern.gif" />
     <Content Include="Images\LinkedIn.png" />
-    <Content Include="Images\Mac Pro.jpg" />
+    <Content Include="Images\Mac Pro.png" />
     <Content Include="Images\steveyi.jpg" />
+    <Content Include="Images\turquoise-pattern.gif" />
     <Content Include="Scripts\admin.js" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\jqgrid\css\ellipsis-xbl.xml" />

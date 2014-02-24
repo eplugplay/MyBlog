@@ -15,7 +15,7 @@
     <title>Steve Yi's Blog</title>
 </head>
 
-<body>
+
   @if (Model.Posts.Count > 0)
   {
     foreach (var post in Model.Posts)
@@ -36,6 +36,4 @@
    
   @Html.Partial("_Pager", Model)
 
-
-  </body>
 

@@ -93,6 +93,7 @@ C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\bin\Debug\Ninject.We
 C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\bin\Debug\Ninject.Web.Mvc.xml
 C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\MyBlog.Core.dll
 C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\MyBlog.Core.pdb
+C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\MyBlog.Core.csprojResolveAssemblyReference.cache
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\bin\Debug\MyBlog.Core.dll
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\bin\Debug\MyBlog.Core.pdb
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\bin\Debug\FluentNHibernate.dll
@@ -117,4 +118,3 @@ C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\bin\Debug\Ninject.Web
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\MyBlog.Core.dll
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\MyBlog.Core.pdb
-C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\MyBlog.Core.csprojResolveAssemblyReference.cache
