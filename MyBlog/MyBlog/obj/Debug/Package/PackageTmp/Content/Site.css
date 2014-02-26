@@ -40,7 +40,15 @@
 
 body 
 {
- height: 100%;
+ overflow-y: scroll
+}
+
+
+#CustomPageTitle
+{
+    font-size: xx-large;
+    font-weight:bold;
+    color: #12372D;
 }
 
 a {
@@ -585,8 +593,22 @@ input[type="checkbox"].input-validation-error {
 
 /* Interest page
 -------------------------------------------------------*/
+.allParagraph
+{
+    width:880px;
+    text-align:justify;
+}
 
-
+hr 
+{
+    float:left;
+    border: 5px;
+    height: 1px;
+    width:900px;
+    /* Set the hr color */
+    color: #333;
+    background-color: #333;
+}
 
 
 /* tables
@@ -876,7 +898,7 @@ h1 {
         footer p {
             margin: 0;
         }
-}
+
 
 /*blog*/
 #search-form
@@ -981,3 +1003,31 @@ h1 {
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
   
+  
+  /* Interest page
+-------------------------------------------------------*/
+#Paragraph
+{
+    width:380px;
+    text-align:justify;
+}
+
+hr 
+{
+    float:left;
+    border: 5px;
+    height: 1px;
+    width:400px;
+    /* Set the hr color */
+    color: #333;
+    background-color: #333;
+}
+
+#InterestTitle
+{
+    font-size: xx-large;
+    font-weight:bold;
+    color: #12372D;
+}
+
+}

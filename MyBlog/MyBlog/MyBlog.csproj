@@ -872,10 +872,14 @@
     <Content Include="Global.asax" />
     <Content Include="Images\Apple.png" />
     <Content Include="Images\blue-line.gif" />
+    <Content Include="Images\csharp.png" />
     <Content Include="Images\Facebook.png" />
+    <Content Include="Images\github.png" />
     <Content Include="Images\green-pattern.gif" />
     <Content Include="Images\LinkedIn.png" />
     <Content Include="Images\Mac Pro.png" />
+    <Content Include="Images\mssql.png" />
+    <Content Include="Images\mysql.png" />
     <Content Include="Images\steveyi.jpg" />
     <Content Include="Images\turquoise-pattern.gif" />
     <Content Include="Scripts\admin.js" />

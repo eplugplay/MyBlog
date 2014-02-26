@@ -37,6 +37,10 @@
     border-top-right-radius:5px;
 }
 
+body 
+{
+ overflow-y: scroll;
+}
 
 #FbImg
 {

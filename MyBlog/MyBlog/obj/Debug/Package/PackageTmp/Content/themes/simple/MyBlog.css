@@ -19,7 +19,7 @@
     overflow: hidden;
     margin-left:auto;
     margin-right:auto;
-    padding: 30px 12px 0px 0px;
+    padding: 30px 30px 0px 0px;
 }
 
 #bodyInner
@@ -39,11 +39,25 @@
   
 body 
 {
- height: 100%;
+ overflow-y: scroll
 }
 
 
+#CustomPageTitle
+{
+    font-size: xx-large;
+    font-weight:bold;
+    color: #12372D;
+}
+
 /*************************************************blog**********************************************/
+/*Blog page*/
+#BlogTitle
+{
+    font-size: xx-large;
+    font-weight:bold;
+    color: #12372D;
+}
 
 #FbImg
 {
@@ -864,6 +878,15 @@ ul#menu li.selected a {color:#000;}
             padding: 0;
         }*/
 
+
+
+#CustomPageTitle
+{
+    font-size: xx-large;
+    font-weight:bold;
+    color: #12372D;
+}
+
 #FbImg
 {
     width:25px;
@@ -1160,6 +1183,16 @@ h3 {
         footer p {
             margin: 0;
         }
+        
+        /*Blog page*/
+#BlogTitle
+{
+    font-size: xx-large;
+    font-weight:bold;
+    color: #12372D;
+}
+        
+        
 }
 
 

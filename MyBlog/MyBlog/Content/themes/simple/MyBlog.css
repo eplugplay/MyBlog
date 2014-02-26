@@ -19,7 +19,7 @@
     overflow: hidden;
     margin-left:auto;
     margin-right:auto;
-    padding: 30px 12px 0px 0px;
+    padding: 30px 30px 0px 0px;
 }
 
 #bodyInner
@@ -39,11 +39,25 @@
   
 body 
 {
- height: 100%;
+ overflow-y: scroll;
 }
 
 
+#CustomPageTitle
+{
+    font-size: xx-large;
+    font-weight:bold;
+    color: #12372D;
+}
+
 /*************************************************blog**********************************************/
+/*Blog page*/
+#BlogTitle
+{
+    font-size: xx-large;
+    font-weight:bold;
+    color: #12372D;
+}
 
 #FbImg
 {
@@ -67,9 +81,14 @@ body
   float: right;
   width:500px;
   clear: both;
-  left: 315px;
-  top:  110px;
+  left: 382px;
+  top:  98px;
   position:absolute;
+}
+
+.wrapper-search
+{
+    position:fixed;
 }
 
 #search-form p
@@ -82,6 +101,66 @@ body
   border: 1px solid #DDD;
   width: 334px;
   padding: 5px;
+}
+
+/*search textbox*/
+input, textarea {
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    color: #333;
+    font-size: 1.2em;
+    margin: 5px 0 6px 0;
+    padding: 7px;
+    width: 140px;
+}
+
+textarea {
+    font-family: inherit;
+    width: 500px;
+}
+
+    input:focus, textarea:focus {
+        border: 1px solid #7ac0da;
+    }
+
+    input[type="checkbox"] {
+        background: transparent;
+        border: inherit;
+        width: auto;
+    }
+
+/* Search button*/
+    input[type="submit"],
+    input[type="button"],
+    button {
+        background-color: #d3dce0;
+        border: 1px solid #787878;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: 600;
+        padding: 6px;
+        width: 70px;
+    }
+
+    td input[type="submit"],
+    td input[type="button"],
+    td button {
+        font-size: 1em;
+        padding: 4px;
+        margin-right: 4px;
+    }
+    
+    
+.vr
+{
+  display:inline;
+  height:83%;
+  width:1px;
+  border:1px inset grey;
+  margin:5px;
+  position:absolute;
+  left:750px;
+  top: 170px;
 }
 
 .pager
@@ -114,13 +193,21 @@ body
 { 
   font-size: large;
   margin-top: 25px;
-  width: 70%;
+  width: 65%;
   /*margin-right:480px;*/
   clear: both; 
 }
 
 .post .post-foot
 { float: left; }
+
+/*div for moving side bar(categories/tags/latestpost)*/
+.wrapper-sidebars
+{
+    position:fixed;
+    border: 1px solid black;
+    width:210px;
+}
 
 /*move side bar here*/
 #sidebars
@@ -621,53 +708,6 @@ label.checkbox {
     display: inline;
 }
 
-input, textarea {
-    border: 1px solid #e2e2e2;
-    background: #fff;
-    color: #333;
-    font-size: 1.2em;
-    margin: 5px 0 6px 0;
-    padding: 5px;
-    width: 250px;
-}
-
-textarea {
-    font-family: inherit;
-    width: 500px;
-}
-
-    input:focus, textarea:focus {
-        border: 1px solid #7ac0da;
-    }
-
-    input[type="checkbox"] {
-        background: transparent;
-        border: inherit;
-        width: auto;
-    }
-
-/* Search button*/
-    input[type="submit"],
-    input[type="button"],
-    button {
-        background-color: #d3dce0;
-        border: 1px solid #787878;
-        cursor: pointer;
-        font-size: 1.2em;
-        font-weight: 600;
-        padding: 7px;
-        margin-right: 8px;
-        width: auto;
-    }
-
-    td input[type="submit"],
-    td input[type="button"],
-    td button {
-        font-size: 1em;
-        padding: 4px;
-        margin-right: 4px;
-    }
-
 /* info and errors */
 .message-info {
     border: 1px solid;
@@ -863,6 +903,15 @@ ul#menu li.selected a {color:#000;}
             margin: 0;
             padding: 0;
         }*/
+
+
+
+#CustomPageTitle
+{
+    font-size: xx-large;
+    font-weight:bold;
+    color: #12372D;
+}
 
 #FbImg
 {
@@ -1160,6 +1209,16 @@ h3 {
         footer p {
             margin: 0;
         }
+        
+        /*Blog page*/
+#BlogTitle
+{
+    font-size: xx-large;
+    font-weight:bold;
+    color: #12372D;
+}
+        
+        
 }
 
 
