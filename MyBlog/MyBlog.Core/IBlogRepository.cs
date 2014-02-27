@@ -24,6 +24,8 @@ namespace MyBlog.Core
 
         Post Post(int year, int month, string titleSlug);
 
+        Post GoToPost(int id);
+
         // side bar
         IList<Category> Categories();
         IList<Tag> Tags();

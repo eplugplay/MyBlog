@@ -136,6 +136,18 @@ namespace MyBlog.Core
             return query.ToFuture().Single();
         }
 
+        // goto
+        public Post GoToPost(int PostID)
+        {
+            var query = _session.Query<Post>()
+                                .Where(p => p.Id.Equals(PostID))
+                                .Fetch(p => p.Category);
+
+            query.FetchMany(p => p.Tags).ToFuture();
+
+            return query.ToFuture().Single();
+        }
+
         // side bar
         public IList<Category> Categories()
         {

@@ -15,7 +15,6 @@
     <title>Steve Yi's Blog</title>
 </head>
 
-
   @if (Model.Posts.Count > 0)
   {
     foreach (var post in Model.Posts)
@@ -24,9 +23,11 @@
     }
         if (Model.PostType == "Default")
         {
+            <!--<div class="vr"></div>-->
             @Html.Partial("_Search")
             @* Call the child action to render the sidebar *@
             @Html.Action("Sidebars")
+
         }
   }
   else
@@ -34,6 +35,6 @@
     <p>No posts found!</p>
   }
    
-  @Html.Partial("_Pager", Model)
+@Html.Partial("_Pager", Model)  
 
 

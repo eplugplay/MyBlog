@@ -70,9 +70,18 @@ namespace MyBlog.Views
         }
 
         // individual post
-        public ViewResult Post(int year, int month, string title)
+        public ViewResult Post(int year, int month, string title, int id = 0)
         {
-            var post = _blogRepository.Post(year, month, title);
+            var post = (MyBlog.Core.Post)null;
+
+            if (id == 0)
+            {
+                post = _blogRepository.Post(year, month, title);
+            }
+            else if (id != 0)
+            {
+                post = _blogRepository.GoToPost(id);
+            }
 
             if (post == null)
                 throw new HttpException(404, "Post not found");

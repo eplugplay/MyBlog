@@ -39,7 +39,7 @@
   
 body 
 {
- overflow-y: scroll
+ overflow-y: scroll;
 }
 
 
@@ -79,11 +79,17 @@ body
 #search-form
 { 
   float: right;
-  width:500px;
+  width: 500px;
   clear: both;
-  left: 315px;
-  top:  110px;
+  left: 366px;
+  top:  90px;
   position:absolute;
+  z-index:1;
+}
+
+.wrapper-search
+{
+    position:fixed;
 }
 
 #search-form p
@@ -96,6 +102,66 @@ body
   border: 1px solid #DDD;
   width: 334px;
   padding: 5px;
+}
+
+/*search textbox*/
+input, textarea {
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    color: #333;
+    font-size: 1.2em;
+    margin: 5px 0 6px 0;
+    padding: 3px;
+    width: 150px;
+}
+
+textarea {
+    font-family: inherit;
+    width: 500px;
+}
+
+    input:focus, textarea:focus {
+        border: 1px solid #7ac0da;
+    }
+
+    input[type="checkbox"] {
+        background: transparent;
+        border: inherit;
+        width: auto;
+    }
+
+/* Search button*/
+    input[type="submit"],
+    input[type="button"],
+    button {
+        background-color: #d3dce0;
+        border: 1px solid #787878;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: 600;
+        padding: 3px;
+        width: 70px;
+    }
+
+    td input[type="submit"],
+    td input[type="button"],
+    td button {
+        font-size: 1em;
+        padding: 4px;
+        margin-right: 4px;
+    }
+    
+    
+.vr
+{
+  display:inline;
+  height:80%;
+  width:1px;
+  border:1px inset grey;
+  margin:5px;
+  position:absolute;
+  left:760px;
+  top: 180px;
 }
 
 .pager
@@ -136,20 +202,34 @@ body
 .post .post-foot
 { float: left; }
 
+/*div for moving side bar(categories/tags/latestpost)
+.wrapper-sidebars
+{
+    position:fixed;
+    border: 1px solid black;
+    width:210px;
+    background-color:#3AF582;
+}*/
+
+
 /*move side bar here*/
 #sidebars
 { 
   float: right;
-  position:absolute; 
-  top: 260px;
-  left: 770px;
+  position:absolute;
+  height:85%;
+  width:25%;
+  top: 170px;
+  left: 720px;
+  background-color: #E7E7E7;
+  z-index:0;
 }
 
-/*categories up/down move here*/
+/*categories(latest post) up/down move here*/
 .sidebar
 { 
   width: 150px;
-  padding: 0 15px 0px 15px;
+  padding: 80px 15px 0px 40px;
   position:relative;
 }
  
@@ -182,7 +262,7 @@ body
 
 /*tags up/down move here*/
 .tags
-{ padding: 0 0 10px 20px; }
+{ padding: 80px 15px 0px 40px; }
 
 .tags a
 { 
@@ -634,53 +714,6 @@ label {
 label.checkbox {
     display: inline;
 }
-
-input, textarea {
-    border: 1px solid #e2e2e2;
-    background: #fff;
-    color: #333;
-    font-size: 1.2em;
-    margin: 5px 0 6px 0;
-    padding: 5px;
-    width: 250px;
-}
-
-textarea {
-    font-family: inherit;
-    width: 500px;
-}
-
-    input:focus, textarea:focus {
-        border: 1px solid #7ac0da;
-    }
-
-    input[type="checkbox"] {
-        background: transparent;
-        border: inherit;
-        width: auto;
-    }
-
-/* Search button*/
-    input[type="submit"],
-    input[type="button"],
-    button {
-        background-color: #d3dce0;
-        border: 1px solid #787878;
-        cursor: pointer;
-        font-size: 1.2em;
-        font-weight: 600;
-        padding: 7px;
-        margin-right: 8px;
-        width: auto;
-    }
-
-    td input[type="submit"],
-    td input[type="button"],
-    td button {
-        font-size: 1em;
-        padding: 4px;
-        margin-right: 4px;
-    }
 
 /* info and errors */
 .message-info {

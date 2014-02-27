@@ -39,7 +39,7 @@
 
 body 
 {
- overflow-y: scroll
+ overflow-y: scroll;
 }
 
 #FbImg

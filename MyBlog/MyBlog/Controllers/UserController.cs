@@ -426,33 +426,5 @@ namespace MyBlog.Controllers
             return Content(json, "application/json");
         }
 
-        //[HttpPost]
-        //public ContentResult GoToPost(Tag tag)
-        //{
-        //    string json;
-
-        //    if (ModelState.IsValid)
-        //    {
-        //        _blogRepository.EditTag(tag);
-        //        json = JsonConvert.SerializeObject(new
-        //        {
-        //            id = tag.Id,
-        //            success = true,
-        //            message = "Changes saved successfully."
-        //        });
-        //    }
-        //    else
-        //    {
-        //        json = JsonConvert.SerializeObject(new
-        //        {
-        //            id = 0,
-        //            success = false,
-        //            message = "Failed to save the changes."
-        //        });
-        //    }
-
-        //    return Content(json, "application/json");
-        //}
-
     }
 }

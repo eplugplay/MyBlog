@@ -1,4 +1,5 @@
 ﻿<div id="search-form">
+<!--<div class="wrapper-search">-->
 @using (Html.BeginForm(
     "Search",           // action
     "Blog",             // controller
@@ -9,7 +10,8 @@
         @Html.TextBox("s")
     </p>
     <p>
-        <input value="Search" type="submit">
+        <input value="Search" type="submit" />
     </p>
 }
+<!--</div>-->
 </div>
