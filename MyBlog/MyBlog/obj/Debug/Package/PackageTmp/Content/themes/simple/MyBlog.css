@@ -1069,8 +1069,8 @@ textarea {
   float: right;
   width: 150px;
   clear: both;
-  left: 185px;
-  top:  90px;
+  left: 180px;
+  top:  80px;
   position:absolute;
 }
 
@@ -1082,8 +1082,7 @@ textarea {
 { 
   color: #555;
   border: 1px solid #DDD;
-  width: 6px;
-  padding: 5px;
+  width: 100px;
 }
 
 /* Search button*/
@@ -1093,11 +1092,16 @@ textarea {
         background-color: #d3dce0;
         border: 1px solid #787878;
         cursor: pointer;
-        font-size: .5em;
+        font-size: .1em;
         font-weight: 600;
-        padding: 0px;
-        margin-right: 0px;
-        width: 50px;
+        width: 45px;
+    }
+    
+    td input[type="submit"],
+    td input[type="button"],
+    td button {
+        padding: 1px;
+        margin-right: 1px;
     }
     
     h1 {
@@ -1131,10 +1135,9 @@ h3 {
 /*text body of each post*/
 .post .post-body
 { 
-  font-size: small;
+  font-size: xx-small;
   margin-top: 25px;
-  max-width: 300px;
-  /*width: 40%;*/
+  width: 60%;
   /*margin-right:480px;*/
   clear: both; 
 }
@@ -1142,21 +1145,25 @@ h3 {
 .post .post-foot
 { float: left; }
 
+
 /*move side bar here*/
 #sidebars
 { 
   float: right;
-  position:absolute; 
-  float:right;
-  top: 210px;
-  left: 368px;
+  position:absolute;
+  height:80%;
+  width: 28%;
+  top: 150px;
+  left: 345px;
+  background-color: #E7E7E7;
+  z-index:0;
 }
 
 /*categories up/down move here*/
 .sidebar
 { 
   width: 150px;
-  padding: 0 15px 0px 15px;
+  padding: 80px 15px 0px 25px;
   position:relative;
 }
  
@@ -1164,7 +1171,7 @@ h3 {
 .sidebar h3
 { 
     margin-left: 20px;
-    font-size: 60%; 
+    font-size: 80%; 
     width: 150px;
 }
 
@@ -1180,8 +1187,8 @@ h3 {
 /*categories*/
 .sidebar li a, .sidebar li a:hover
 { 
-  font-size:xx-small;  
-  padding: 0 0 0 22px;
+  font-size:x-small;  
+  padding: 8px 0 0 20px;
   display: block;
   background: transparent url(images/link.png) no-repeat left center;
   border: 0;}
@@ -1191,12 +1198,12 @@ h3 {
 
 /*tags up/down move here*/
 .tags
-{ padding: 0 15px 0px 15px; }
+{ padding: 80px 15px 0px 20px; }
 
 .tags a
 { 
-  font-size:xx-small;
-  padding: 0 0 0 22px;
+  font-size:x-small;
+  padding: 8px 0 0 22px;
   background: transparent url(images/link.png) no-repeat left center;
   border: 0; }
 
