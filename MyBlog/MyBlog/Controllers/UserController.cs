@@ -93,6 +93,14 @@ namespace MyBlog.Controllers
             FormsAuthentication.SignOut();
             Session.Abandon();
             Session.Clear();
+            // Clear authentication cookie
+            HttpCookie rFormsCookie = new HttpCookie(FormsAuthentication.FormsCookieName, "");
+            rFormsCookie.Expires = DateTime.Now.AddYears(-1);
+            Response.Cookies.Add(rFormsCookie);
+            // Clear session cookie 
+            HttpCookie rSessionCookie = new HttpCookie("ASP.NET_SessionId", "");
+            rSessionCookie.Expires = DateTime.Now.AddYears(-1);
+            Response.Cookies.Add(rSessionCookie);
             return RedirectToAction("Index", "Home");
         }
 
