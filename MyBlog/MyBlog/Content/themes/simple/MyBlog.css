@@ -911,7 +911,11 @@ ul#menu li.selected a {color:#000;}
             padding: 0;
         }*/
 
-
+#iPad
+{
+    width:300px;
+    height:315px;
+}
 
 #CustomPageTitle
 {
@@ -1139,8 +1143,16 @@ h3 {
   margin-top: 25px;
   width: 60%;
   /*margin-right:480px;*/
-  clear: both; 
+  clear: both;
 }
+
+#iframeVideos
+{
+    height:180px;
+    width:320px;
+    padding:0;
+}
+ 
 
 .post .post-foot
 { float: left; }
@@ -1231,7 +1243,7 @@ h3 {
     font-weight:bold;
     color: #12372D;
 }
-        
+       
         
 }
 
