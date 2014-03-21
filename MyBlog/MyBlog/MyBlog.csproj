@@ -1433,6 +1433,7 @@
     <None Include="Content\themes\simple\jqueryuicustom\development-bundle\ui.tooltip.jquery.json" />
     <None Include="Content\themes\simple\jqueryuicustom\development-bundle\ui.widget.jquery.json" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Shared\_Disqus.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

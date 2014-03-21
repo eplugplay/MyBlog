@@ -184,7 +184,9 @@ textarea {
 { margin-right: 5px; }
 
 .post .posted-date
-{ float: left; }
+{ 
+  width:150px;
+}
 
 .post .row
 { clear: both; }
@@ -211,6 +213,11 @@ textarea {
     background-color:#3AF582;
 }*/
 
+/*Disqus no of comments*/
+.no-of-comments
+{
+    width:500px;
+}
 
 /*move side bar here*/
 #sidebars
