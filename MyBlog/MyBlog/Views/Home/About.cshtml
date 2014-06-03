@@ -13,6 +13,7 @@
 
 <html>
 <head>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyACpSh5N8BCKIVouVUeNrMnomGm9HkyzZs&sensor=false">
     <title>Index</title>
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/themes/base/jquery.ui.datepicker.css")" rel="stylesheet"
@@ -24,6 +25,36 @@
     
  <script type="text/javascript">
 
+     function initialize() {
+         var myLatlng = new google.maps.LatLng(29.74874825536459, -95.3546363067627);
+         var mapOptions = {
+             zoom: 4,
+             center: myLatlng
+         }
+         var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+         var marker = new google.maps.Marker({
+             position: myLatlng,
+             animation:google.maps.Animation.DROP,
+             map: map,
+             title: 'Click to zoom'
+         });
+
+         marker.setTitle('Current Location');
+         attachSecretMessage(marker);
+     }
+
+
+     function attachSecretMessage(marker) {
+         var message = 'Houston TX';
+         var infowindow = new google.maps.InfoWindow({content: message});
+         google.maps.event.addListener(marker, 'click', function () {
+             infowindow.open(marker.get('map'), marker);
+         });
+     }
+
+         google.maps.event.addDomListener(window, 'load', initialize);
+     
     </script>
 </head>
 <body>
@@ -39,9 +70,10 @@
          <img src="@Url.Content("/Images/steveyi.jpg")" style="width:150px;height:150px" alt="My Pic" />
          <br />
          <br />
-  My name is Steve Yi and I currently work as a software developer. I have been a developer for 2 years and I am very passionate about it. I thought it would be a great idea to start my own blog to help me keep up to date with the latest technologies. I have built this website using MVC4
-  and hope to learn more about it as well in the process.
+  <p>My name is Steve Yi and I currently work as a software developer. I have been a developer for 2 years and I am very passionate about it. I thought it would be a great idea to start my own blog to help me keep up to date with the latest technologies. I have built this website using MVC4
+  and hope to learn more about it as well in the process.</p>
 
+ <div id="map-canvas" style="width:300px;height:180px;"></div>
  </body>
 </body>
 </html>

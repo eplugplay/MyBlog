@@ -38,6 +38,15 @@
     border-top-right-radius:5px;
 }
 
+#map-canvas
+{
+    margin-left:640px;
+}
+
+#infoWindow {
+    width: 200px;
+}
+
 body 
 {
  overflow-y: scroll;
