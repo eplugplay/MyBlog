@@ -23,7 +23,6 @@ namespace MyBlog.Controllers
 
         public ActionResult About()
         {
-            
             return View();
         }
 
