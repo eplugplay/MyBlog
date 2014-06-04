@@ -286,6 +286,7 @@ C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\DotNetOpenAuth.OpenId
 C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.csprojResolveAssemblyReference.cache
 C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.dll
 C:\Users\SteveYi\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.pdb
+C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\favicon.ico
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\MyBlog.dll
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\MyBlog.pdb
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\Antlr3.Runtime.dll

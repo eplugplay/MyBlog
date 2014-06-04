@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
 
     @using MyBlog.HtmlHelpers
-    <title>@ViewBag.Title - Steve Yi's Website</title>
+    <title>@ViewBag.Title - Steve's Virtual Playground</title>
     <meta name="description" content="Free Web tutorials">
     <meta name="description" content="Mac">
     <meta name="description" content="Apple">
@@ -50,7 +50,8 @@
     <meta name="description" content="gamestop">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Steve Yi">
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!--<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />-->
+    <link href="@Url.Content("~/favicon.ico")" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     @Styles.Render("~/Content/Site.css")
 </head>

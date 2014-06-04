@@ -868,7 +868,9 @@
     <Content Include="Content\themes\simple\jqueryuicustom\js\jquery-ui-1.9.2.custom.js" />
     <Content Include="Content\themes\simple\jqueryuicustom\js\jquery-ui-1.9.2.custom.min.js" />
     <Content Include="Content\themes\simple\MyBlog.css" />
-    <Content Include="favicon.ico" />
+    <Content Include="favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Images\Apple.png" />
     <Content Include="Images\blue-line.gif" />
