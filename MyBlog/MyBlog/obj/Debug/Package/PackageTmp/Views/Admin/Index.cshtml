@@ -30,13 +30,23 @@
  
     <!-- tinyMCE -->
     <script src="~/Scripts/tiny_mce/tiny_mce.js"></script>
- 
     <link href="~/Content/themes/simple/admin.css" rel="stylesheet" />
     <script src="~/Scripts/admin.js"></script>
-
-
 </head>
 
+<script type="text/javascript">
+   /* mcImageManager.init({
+        relative_urls: false,
+        remove_script_host: false,
+        convert_urls: true
+    }); */
+    tinymce.init({
+        relative_urls: false
+    });
+    /*tinyMCE.init({
+        relative_urls: false
+    });*/
+</script>
 
      
 @*    <!-- logout link -->

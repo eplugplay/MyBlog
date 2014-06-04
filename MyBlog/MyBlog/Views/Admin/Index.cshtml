@@ -30,13 +30,15 @@
  
     <!-- tinyMCE -->
     <script src="~/Scripts/tiny_mce/tiny_mce.js"></script>
- 
     <link href="~/Content/themes/simple/admin.css" rel="stylesheet" />
     <script src="~/Scripts/admin.js"></script>
-
-
 </head>
 
+<script type="text/javascript">
+    tinymce.init({
+        relative_urls: false
+    });
+</script>
 
      
 @*    <!-- logout link -->

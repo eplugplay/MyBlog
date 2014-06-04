@@ -873,6 +873,7 @@
     <Content Include="Images\Apple.png" />
     <Content Include="Images\blue-line.gif" />
     <Content Include="Images\csharp.png" />
+    <Content Include="Images\excel.jpg" />
     <Content Include="Images\Facebook.png" />
     <Content Include="Images\github.png" />
     <Content Include="Images\green-pattern.gif" />
