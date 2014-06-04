@@ -36,7 +36,6 @@
     border-top-right-radius:5px;
 }
 
-  
 body 
 {
  overflow-y: scroll;
@@ -52,6 +51,21 @@ body
 
 /*************************************************blog**********************************************/
 /*Blog page*/
+/* if adding an image, centers the images in each post */
+.ImgAlign
+{
+    text-align:center;
+}
+
+/* youtube videos size */
+#iframeVideos
+{
+    text-align:center;
+    height:315px;
+    width:560px;
+    padding:0;
+}
+  
 #BlogTitle
 {
     font-size: xx-large;
@@ -1153,8 +1167,22 @@ h3 {
   clear: both;
 }
 
+
+/* if adding an image, centers the images in each post */
+.ImgAlign
+{
+    text-align:center;
+}
+
+.PostedImg
+{
+    width:70%;
+}
+  
+/* youtube videos size */
 #iframeVideos
 {
+    text-align:center;
     height:180px;
     width:320px;
     padding:0;
