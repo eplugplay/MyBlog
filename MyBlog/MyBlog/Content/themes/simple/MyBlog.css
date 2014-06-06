@@ -122,31 +122,6 @@ pre {
     font-size:14px;
 }
 
-/*section for coding block mimic c# -------------------------------------------------*/
-/*red*/
-.str{
-	color:#800000
-}
-
-/*purple*/
-.kwd{
-	color:#00008b
-}
-/*black*/
-.pln{
-	color:#000
-}
-/*turquoise*/
-.typ{
-		color:#2B91AF;
-		font-weight:bold
-}
-
-/*black punctuation*/
-	.pun {
-    color: #000;
-}
-
 /*------------------------------------------------------------------------------------*/
 
 /*move search bar here*/
