@@ -90,14 +90,7 @@ body
     padding-right:5px;
 }
 
-/*pre {
-    font: 10px/22px Monaco,monospace;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #EFEFF0;
-    word-wrap: break-word;
-}*/
-
+/*
 pre {
     display: block;
     padding: 9.5px;
@@ -109,13 +102,52 @@ pre {
     background-color: #F5F5F5;
     border: 1px solid #CCC;
     border-radius: 4px;
-    font: 12px/22px Monaco,monospace;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    font-size: 12px;
     margin-bottom: 10px;
     padding: 10px;
     background-color: #EFEFF0;
     word-wrap: break-word;
     overflow:auto;
 }
+*/
+pre {
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #EEE;
+    overflow: auto;
+    width: auto;
+    max-height: 600px;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    font-size:14px;
+}
+
+/*section for coding block mimic c# -------------------------------------------------*/
+/*red*/
+.str{
+	color:#800000
+}
+
+/*purple*/
+.kwd{
+	color:#00008b
+}
+/*black*/
+.pln{
+	color:#000
+}
+/*turquoise*/
+.typ{
+		color:#2B91AF;
+		font-weight:bold
+}
+
+/*black punctuation*/
+	.pun {
+    color: #000;
+}
+
+/*------------------------------------------------------------------------------------*/
 
 /*move search bar here*/
 #search-form
