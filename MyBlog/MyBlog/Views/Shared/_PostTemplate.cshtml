@@ -10,6 +10,7 @@
  
       <!--Heading-->
       <div class="post-title">
+      <br />
         <h2>@Html.PostLink(Model)</h2>
       </div>
  
@@ -41,11 +42,15 @@
  
   <!--Short Description-->
   <div class="post-body">
+  <br />
     @Html.Raw(Model.Description)
+    <br />
   </div>
  
   <div class="post-foot">
-    @Html.ActionLink("continue...", "post", "blog",
+  <hr class="style-three">
+
+  <!--  @Html.ActionLink("continue...", "post", "blog",
         new
         {
             year = Model.PostedOn.Year,
@@ -55,6 +60,7 @@
         },
         new { title = "continue..." }
     )
+    -->
   </div>
   
 </div>

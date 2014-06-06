@@ -53,6 +53,18 @@ body
 /*Blog page
 -------------------------------------------------------*/
 /* if adding an image, centers the images in each post */
+
+hr.style-three {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    width:680px;
+}
+
+
 .ImgAlign
 {
     text-align:center;
@@ -122,7 +134,7 @@ pre {
     font-size:14px;
 }
 
-/*section for coding block mimic c# -------------------------------------------------*/
+/*section for coding block mimic c#, works with prettify -------------------------------------------------*/
 /*red*/
 .str{
 	color:#800000
@@ -1139,7 +1151,27 @@ ul#menu li.selected a {color:#000;}
     }
     
     /* MyBlog section mobile----------------------------------*/
+    
+    pre {
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #EEE;
+    overflow: auto;
+    width: auto;
+    max-height: 600px;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    font-size:8px;
+}
 
+hr.style-three {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    width:300px;
+}
 
 /*search textbox size*/
 input, textarea {

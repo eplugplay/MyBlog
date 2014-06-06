@@ -885,6 +885,7 @@
     <Content Include="Images\mysql.png" />
     <Content Include="Images\steveyi.jpg" />
     <Content Include="Images\turquoise-pattern.gif" />
+    <Content Include="Images\welcome.png" />
     <Content Include="Scripts\admin.js" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\jqgrid\css\ellipsis-xbl.xml" />
@@ -1437,6 +1438,7 @@
     <None Include="Content\themes\simple\jqueryuicustom\development-bundle\ui.widget.jquery.json" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\Shared\_Disqus.cshtml" />
+    <Content Include="Views\Shared\_FooterPartial.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

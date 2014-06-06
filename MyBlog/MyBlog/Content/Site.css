@@ -39,6 +39,39 @@
 }
 
 
+/*  Home
+------------------------------------------------------*/
+
+
+#IntroPic
+{
+    width:480px;
+    height:360px;
+}
+
+
+/* Interest page
+-------------------------------------------------------*/
+.allParagraph
+{
+    width:880px;
+    text-align:justify;
+}
+
+hr 
+{
+    float:left;
+    border: 5px;
+    height: 1px;
+    width:900px;
+    /* Set the hr color */
+    color: #333;
+    background-color: #333;
+}
+
+
+
+
   /* About Me 
 -------------------------------------------------------*/
 #map-canvas
@@ -621,27 +654,6 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
-/* Interest page
--------------------------------------------------------*/
-.allParagraph
-{
-    width:880px;
-    text-align:justify;
-}
-
-hr 
-{
-    float:left;
-    border: 5px;
-    height: 1px;
-    width:900px;
-    /* Set the hr color */
-    color: #333;
-    background-color: #333;
-}
-
-
-
 /* tables
 ----------------------------------------------------------*/
 table {
@@ -928,8 +940,18 @@ h1 {
         footer p {
             margin: 0;
         }
+        
+/*  Home
+------------------------------------------------------*/
 
-  
+
+#IntroPic
+{
+    width:350px;
+    height:263px;
+}
+
+
   /* About Me 
 -------------------------------------------------------*/
 
