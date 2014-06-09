@@ -1,6 +1,7 @@
 ﻿html {
     background:url("/Images/turquoise-pattern.gif");
     background-repeat:repeat;
+    background-attachment: fixed;
     /*background-color : black;*/
         /*background-color: #3EA99F;*/
         /* IE10 Consumer Preview */ 
