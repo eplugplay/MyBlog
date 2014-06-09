@@ -251,7 +251,7 @@ textarea {
 }
 
 .pager
-{ margin-top:20px; clear: right; }
+{ margin-top:20px; clear: right; font-size: small;}
 
 .pager .next
 { float: right; }
@@ -282,7 +282,7 @@ textarea {
 { 
   font-size: large;
   margin-top: 25px;
-  width: 70%;
+  width: 100%;
   /*margin-right:480px;*/
   clear: both; 
 }
@@ -448,7 +448,7 @@ h1
 h2 
 {
     /*color:#FF0000;*/
-    font-size: 1.15em;
+    font-size: 1.3em;
     font-family:Yanone,Arial,sans-serif;
 }
 
@@ -1261,9 +1261,9 @@ h3 {
 /*text body of each post*/
 .post .post-body
 { 
-  font-size: xx-small;
+  font-size: small;
   margin-top: 25px;
-  width: 60%;
+  width: 100%;
   /*margin-right:480px;*/
   clear: both;
 }

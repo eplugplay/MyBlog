@@ -1,7 +1,6 @@
 ﻿@model MyBlog.Models.ListViewModel
 
     @{
-        //Layout = null;
         Layout = "~/Views/Shared/_LayoutBlog.cshtml";
     }
 
@@ -23,10 +22,9 @@
     }
         if (Model.PostType == "Default")
         {
-            <!--<div class="vr"></div>-->
             @Html.Partial("_Search")
             @* Call the child action to render the sidebar *@
-            @Html.Action("Sidebars")
+            @*Html.Action("Sidebars")*@
 
         }
   }
