@@ -251,7 +251,7 @@ textarea {
 }
 
 .pager
-{ margin-top:20px; clear: right; font-size: small;}
+{ margin-top:20px; clear: right;}
 
 .pager .next
 { float: right; }
@@ -1237,6 +1237,12 @@ textarea {
 h3 {
     font-size: .8em;
 }
+
+.pager
+{ margin-top:20px; clear: right; font-size:x-small;}
+
+.pager .next
+{ float: right; }
 
 /*Title of each post*/
  .post .post-title
