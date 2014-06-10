@@ -115,6 +115,6 @@ C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\bin\Debug\Ninject.Web
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\bin\Debug\Ninject.Web.Common.xml
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\bin\Debug\Ninject.Web.Mvc.pdb
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\bin\Debug\Ninject.Web.Mvc.xml
-C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\MyBlog.Core.dll
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\MyBlog.Core.pdb
+C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog.Core\obj\Debug\MyBlog.Core.csprojResolveAssemblyReference.cache

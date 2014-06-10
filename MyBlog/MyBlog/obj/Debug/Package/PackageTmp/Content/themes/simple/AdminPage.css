@@ -47,6 +47,11 @@ body
     width:40px;
 }
 
+#GitHubImg
+{
+    width:40px;
+}
+
 #LinkedInImg
 {
     width:40px;
@@ -89,7 +94,9 @@ a {
     }
 
     a:hover {
-        background-color: #c7d1d6;
+        /*background-color: #c7d1d6;*/
+        background-color: transparent;
+        background-image: none;
     }
 
 header, footer, hgroup,
@@ -842,12 +849,18 @@ ul#menu li.selected a {color:#000;}
         
 #FbImg
 {
-    width:40px;
+    width:25px;
 }
+
+#GitHubImg
+{
+    width:25px;
+}
+
 
 #LinkedInImg
 {
-    width:40px;
+    width:25px;
 }
 
 #FooterImg

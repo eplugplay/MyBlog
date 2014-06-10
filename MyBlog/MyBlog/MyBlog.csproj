@@ -879,6 +879,7 @@
     <Content Include="Images\Facebook.png" />
     <Content Include="Images\FilterSemalt.PNG" />
     <Content Include="Images\github.png" />
+    <Content Include="Images\GitHubFooter.png" />
     <Content Include="Images\green-pattern.gif" />
     <Content Include="Images\LinkedIn.png" />
     <Content Include="Images\Mac Pro.png" />

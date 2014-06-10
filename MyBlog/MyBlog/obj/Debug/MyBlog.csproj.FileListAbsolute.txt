@@ -356,6 +356,6 @@ C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\DotNetOpenAuth.OAuth.C
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\DotNetOpenAuth.OAuth.xml
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\DotNetOpenAuth.OpenId.xml
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.dll
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.pdb
+C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.csprojResolveAssemblyReference.cache

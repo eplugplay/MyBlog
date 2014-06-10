@@ -122,7 +122,9 @@ a {
     }
 
     a:hover {
-        background-color: #c7d1d6;
+        /*background-color: #c7d1d6;*/
+        background-color: transparent;
+        background-image: none;
     }
 
 header, footer, hgroup,
@@ -200,6 +202,11 @@ border: none;
 } 
 
 #FbImg
+{
+    width:40px;
+}
+
+#GitHubImg
 {
     width:40px;
 }
@@ -797,6 +804,11 @@ ul#menu li.selected {background:#efeeef no-repeat 0 -150px;}
 ul#menu li.selected a {color:#000;}
 
 #FbImg
+{
+    width:25px;
+}
+
+#GitHubImg
 {
     width:25px;
 }
