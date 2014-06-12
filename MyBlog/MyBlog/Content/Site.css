@@ -149,6 +149,14 @@ mark {
         position:inherit;
         float: right;
     }
+    
+    .float-tab-left
+    {
+        position:inherit;
+        float:left;
+    }
+    /*
+    -----------------------------------------*/
 
 .clear-fix:after {
     content: ".";
