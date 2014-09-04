@@ -994,7 +994,7 @@ h1 {
 -------------------------------------------------------*/
 .allParagraph
 {
-    width:380px;
+    width:auto;
     text-align:justify;
 }
 
