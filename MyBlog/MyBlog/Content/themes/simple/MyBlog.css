@@ -1294,6 +1294,11 @@ h3 {
     text-align:center;
 }
 
+.imgSize
+{
+    width:auto;
+}
+
 .PostedImg
 {
     width:70%;
@@ -1303,8 +1308,7 @@ h3 {
 #iframeVideos
 {
     text-align:center;
-    height:180px;
-    width:320px;
+    width:70%;
     padding:0;
 }
  
