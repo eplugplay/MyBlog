@@ -803,9 +803,9 @@ tr.pager td {
 ----------------------------------------------------------*/
 ul#menu {padding:0;position:relative;margin:0 0 0 15px ;text-align:right;}
 /* tab background color */
-ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:1.1em;}
+ul#menu li {display:block;list-style:none;background:#d5edc9 no-repeat 0 -150px;float:left;margin:0 2px 0 0;font-size:8px;}
 /* tab font color */
-ul#menu li a {padding:10px 20px;font-weight:bold;text-decoration:none;color:#36ae00;background: transparent no-repeat right -150px;display:block;}
+ul#menu li a {padding:8px 15px;font-weight:bold;text-decoration:none;color:#36ae00;background: transparent no-repeat right -150px;display:block;}
 ul#menu li a:hover {text-decoration:none;color:#000;}
 ul#menu li a:active {text-decoration:none;color:#009933;}
 ul#menu li.selected {background:#efeeef no-repeat 0 -150px;}
@@ -967,8 +967,9 @@ h1 {
 
 #IntroPic
 {
-    width:350px;
-    height:263px;
+    width:250px;
+    height:163px;
+    text-align:center;
 }
 
 
