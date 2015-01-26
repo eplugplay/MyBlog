@@ -91,6 +91,7 @@ namespace MyBlog.Controllers
         public ActionResult LogOut()
         {
             FormsAuthentication.SignOut();
+            Session.RemoveAll();
             Session.Abandon();
             Session.Clear();
             // Clear authentication cookie
@@ -101,6 +102,7 @@ namespace MyBlog.Controllers
             HttpCookie rSessionCookie = new HttpCookie("ASP.NET_SessionId", "");
             rSessionCookie.Expires = DateTime.Now.AddYears(-1);
             Response.Cookies.Add(rSessionCookie);
+            Session["IsLoggedIn"] = null;
             return RedirectToAction("Index", "Home");
         }
 
