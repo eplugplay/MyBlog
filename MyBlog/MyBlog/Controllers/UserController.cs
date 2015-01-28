@@ -42,7 +42,6 @@ namespace MyBlog.Controllers
                 if (IsValid(user.Email, user.Password))
                 {
                     FormsAuthentication.SetAuthCookie(user.Email, false);
-                    Session["IsLoggedIn"] = "true";
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -102,7 +101,6 @@ namespace MyBlog.Controllers
             HttpCookie rSessionCookie = new HttpCookie("ASP.NET_SessionId", "");
             rSessionCookie.Expires = DateTime.Now.AddYears(-1);
             Response.Cookies.Add(rSessionCookie);
-            Session["IsLoggedIn"] = null;
             return RedirectToAction("Index", "Home");
         }
 

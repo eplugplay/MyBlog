@@ -23,16 +23,16 @@ namespace MyBlog.HtmlHelpers
             return classValue;
         }
 
-        public static string Role(this HtmlHelper helper)
-        {
-            string display = "none";
+        //public static string Role(this HtmlHelper helper)
+        //{
+        //    string display = "none";
 
-            if (HttpContext.Current.Session["IsLoggedIn"] != null)
-            {
-                display = "inline";
-            }
+        //    if (HttpContext.Current.Session["IsLoggedIn"] != null)
+        //    {
+        //        display = "inline";
+        //    }
 
-            return display;
-        }
+        //    return display;
+        //}
     }
 }
