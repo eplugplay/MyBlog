@@ -41,7 +41,6 @@ namespace MyBlog.Controllers
             {
                 if (IsValid(user.Email, user.Password))
                 {
-                    Session["IsLoggedIn"] = true;
                     FormsAuthentication.SetAuthCookie(user.Email, false);
                     return RedirectToAction("Index", "Home");
                 }

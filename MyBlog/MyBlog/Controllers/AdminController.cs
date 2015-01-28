@@ -14,7 +14,7 @@ namespace MyBlog.Controllers
 
         public ActionResult Index()
         {
-            if (Session["IsLoggedIn"] == null)
+            if (!Request.IsAuthenticated)
             {
                 return RedirectToAction("LogIn", "User");
             }
