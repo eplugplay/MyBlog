@@ -83,6 +83,7 @@
                         <ul id="menu">
                             <li class="@Html.ActivePage("Home", "Index")">@Html.ActionLink("Home", "Index", "Home")</li>
                             <li class="@Html.ActivePage("Blog", "Posts")">@Html.ActionLink("Blog", "Posts", "Blog")</li>
+                            <li class="@Html.ActivePage("PlayGround", "Index")">@Html.ActionLink("Playground", "Index", "PlayGround")</li>
                             <li class="@Html.ActivePage("Home", "Interests")">@Html.ActionLink("Interests", "Interests", "Home")</li>
                             @if (Request.IsAuthenticated)
                             {

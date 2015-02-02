@@ -6,16 +6,17 @@
     <edmx:StorageModels>
     <Schema Namespace="db_9ae46c_myblogModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="db_9ae46c_myblogModelStoreContainer">
-          <EntitySet Name="systemusers" EntityType="db_9ae46c_myblogModel.Store.systemusers" store:Type="Tables" Schema="db_9ae46c_myblog" />
+          <EntitySet Name="systemusers" EntityType="db_9ae46c_myblogModel.Store.systemusers" Schema="db_9ae46c_myblog" store:Type="Tables" />
         </EntityContainer>
         <EntityType Name="systemusers">
           <Key>
-            <PropertyRef Name="Email" />
+            <PropertyRef Name="id" />
           </Key>
-          <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="150" />
-          <Property Name="Email" Type="varchar" Nullable="false" MaxLength="150" />
-          <Property Name="Password" Type="varchar" Nullable="false" MaxLength="200" />
-          <Property Name="PasswordSalt" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+          <Property Name="UserID" Nullable="false" MaxLength="150" Type="varchar" />
+          <Property Name="Email" Nullable="false" MaxLength="150" Type="varchar" />
+          <Property Name="Password" Nullable="false" MaxLength="200" Type="varchar" />
+          <Property Name="PasswordSalt" Nullable="false" MaxLength="200" Type="varchar" />
         </EntityType>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -26,12 +27,13 @@
         </EntityContainer>
         <EntityType Name="systemuser">
           <Key>
-            <PropertyRef Name="Email" />
+            <PropertyRef Name="id" />
           </Key>
-          <Property Name="UserID" Type="String" Nullable="false" />
-          <Property Name="Email" Type="String" Nullable="false" />
-          <Property Name="Password" Type="String" Nullable="false" />
-          <Property Name="PasswordSalt" Type="String" Nullable="false" />
+          <Property Name="UserID" Nullable="false" Type="String" />
+          <Property Name="Email" Nullable="false" Type="String" />
+          <Property Name="Password" Nullable="false" Type="String" />
+          <Property Name="PasswordSalt" Nullable="false" Type="String" />
+          <Property Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -40,7 +42,8 @@
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="db_9ae46c_myblogModelStoreContainer" CdmEntityContainer="db_9ae46c_myblogEntities">
           <EntitySetMapping Name="systemusers"><EntityTypeMapping TypeName="db_9ae46c_myblogModel.systemuser"><MappingFragment StoreEntitySet="systemusers">
-            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
             <ScalarProperty Name="Email" ColumnName="Email" />
             <ScalarProperty Name="Password" ColumnName="Password" />
             <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
@@ -66,7 +69,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
       <Diagram Name="MainDbEntities">
-        <EntityTypeShape EntityType="db_9ae46c_myblogModel.systemuser" Width="1.5" PointX="0.75" PointY="0.75" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_9ae46c_myblogModel.systemuser" PointX="0.75" PointY="0.75" Width="1.5" Height="1.787985026041667" IsExpanded="true" />
       </Diagram>
     </Diagrams>
   </Designer>

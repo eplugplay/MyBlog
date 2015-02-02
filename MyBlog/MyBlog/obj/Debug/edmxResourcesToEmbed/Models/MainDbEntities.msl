@@ -4,6 +4,7 @@
     <EntitySetMapping Name="systemusers">
       <EntityTypeMapping TypeName="db_9ae46c_myblogModel.systemuser">
         <MappingFragment StoreEntitySet="systemusers">
+          <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Password" ColumnName="Password" />

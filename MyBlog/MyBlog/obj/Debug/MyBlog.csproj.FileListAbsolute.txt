@@ -360,7 +360,6 @@ C:\Users\Steve Yi\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.csprojR
 C:\Users\Steve Yi\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.dll
 C:\Users\Steve Yi\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.pdb
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\favicon.ico
-C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\MyBlog.dll.config
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\MyBlog.dll
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\MyBlog.pdb
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\Antlr3.Runtime.dll

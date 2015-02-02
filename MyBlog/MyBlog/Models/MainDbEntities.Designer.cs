@@ -8,15 +8,15 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.ComponentModel;
+using System.Data.EntityClient;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
-using System.Data.EntityClient;
-using System.ComponentModel;
-using System.Xml.Serialization;
+using System.Linq;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 [assembly: EdmSchemaAttribute()]
-
 namespace MyBlog.Models
 {
     #region Contexts
@@ -82,6 +82,7 @@ namespace MyBlog.Models
         private ObjectSet<systemuser> _systemusers;
 
         #endregion
+
         #region AddTo Methods
     
         /// <summary>
@@ -93,11 +94,11 @@ namespace MyBlog.Models
         }
 
         #endregion
+
     }
-    
 
     #endregion
-    
+
     #region Entities
     
     /// <summary>
@@ -117,17 +118,20 @@ namespace MyBlog.Models
         /// <param name="email">Initial value of the Email property.</param>
         /// <param name="password">Initial value of the Password property.</param>
         /// <param name="passwordSalt">Initial value of the PasswordSalt property.</param>
-        public static systemuser Createsystemuser(global::System.String userID, global::System.String email, global::System.String password, global::System.String passwordSalt)
+        /// <param name="id">Initial value of the id property.</param>
+        public static systemuser Createsystemuser(global::System.String userID, global::System.String email, global::System.String password, global::System.String passwordSalt, global::System.Int32 id)
         {
             systemuser systemuser = new systemuser();
             systemuser.UserID = userID;
             systemuser.Email = email;
             systemuser.Password = password;
             systemuser.PasswordSalt = passwordSalt;
+            systemuser.id = id;
             return systemuser;
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -157,7 +161,7 @@ namespace MyBlog.Models
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
         public global::System.String Email
         {
@@ -167,14 +171,11 @@ namespace MyBlog.Models
             }
             set
             {
-                if (_Email != value)
-                {
-                    OnEmailChanging(value);
-                    ReportPropertyChanging("Email");
-                    _Email = StructuralObject.SetValidValue(value, false);
-                    ReportPropertyChanged("Email");
-                    OnEmailChanged();
-                }
+                OnEmailChanging(value);
+                ReportPropertyChanging("Email");
+                _Email = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("Email");
+                OnEmailChanged();
             }
         }
         private global::System.String _Email;
@@ -228,11 +229,40 @@ namespace MyBlog.Models
         private global::System.String _PasswordSalt;
         partial void OnPasswordSaltChanging(global::System.String value);
         partial void OnPasswordSaltChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 id
+        {
+            get
+            {
+                return _id;
+            }
+            set
+            {
+                if (_id != value)
+                {
+                    OnidChanging(value);
+                    ReportPropertyChanging("id");
+                    _id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("id");
+                    OnidChanged();
+                }
+            }
+        }
+        private global::System.Int32 _id;
+        partial void OnidChanging(global::System.Int32 value);
+        partial void OnidChanged();
 
         #endregion
+
     
     }
 
     #endregion
+
     
 }

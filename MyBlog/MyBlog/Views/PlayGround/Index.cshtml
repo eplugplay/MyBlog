@@ -1,0 +1,88 @@
+﻿@model IEnumerable<MyBlog.Models.systemuser>
+
+@{
+    ViewBag.Title = "Play Ground";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+<style type="text/css">
+.ui-widget-header,.ui-state-default, ui-button{
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+         .editDetails 
+         {
+
+         }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".editDetails").on("dblclick", function () {
+            var id = $(this).closest('tr').find(".IDClass").val();
+            $.ajax({
+                url: "PlayGround/Edit",
+                contentType: 'application/html; charset=utf-8',
+                type: 'GET',
+                cache: false,
+                data: { id: id },
+                dataType: 'html',
+                async: false
+            }).success(function (result) {
+                // Display the section contents.
+                $('#popupwindow').html(result);
+            }).error(function (xhr, status) {
+                alert(xhr.responseText);
+            });
+            $("#popupwindow").dialog({
+                autoOpen: false,
+                modal: true,
+                height: "500",
+                width: "500",
+                show: "fade",
+                buttons: {
+                    OK: function () { $(this).dialog("close"); }
+                }
+            });
+            $("#popupwindow").dialog("open");
+        });
+    });
+
+
+</script>
+</head>
+
+<h2>Playground</h2>
+
+<div>
+<table>
+<th>
+test
+</th>
+@{int i = 0;}
+@foreach (var item in Model)
+{
+<tr class="editDetails">
+<td>
+@Html.DisplayTextFor(model => item.Email)
+@Html.HiddenFor(model => item.id, new { @class = "IDClass" })
+</td>
+</tr>
+@*    if (i % 2 == 0)
+    {
+     <script type="text/javascript">$(".editDetails" + @i).css("background-color", "Red");</script>
+    }
+    else
+    {
+    <script type="text/javascript">$(".editDetails" + @i).css("background-color", "Blue");</script>
+    }
+    i++;*@
+}
+</table>
+</div>
+
+
+<div id="popupwindow" title="Information"></div>

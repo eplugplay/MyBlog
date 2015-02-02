@@ -5,11 +5,12 @@
   </EntityContainer>
   <EntityType Name="systemuser">
     <Key>
-      <PropertyRef Name="Email" />
+      <PropertyRef Name="id" />
     </Key>
-    <Property Name="UserID" Type="String" Nullable="false" />
-    <Property Name="Email" Type="String" Nullable="false" />
-    <Property Name="Password" Type="String" Nullable="false" />
-    <Property Name="PasswordSalt" Type="String" Nullable="false" />
+    <Property Name="UserID" Nullable="false" Type="String" />
+    <Property Name="Email" Nullable="false" Type="String" />
+    <Property Name="Password" Nullable="false" Type="String" />
+    <Property Name="PasswordSalt" Nullable="false" Type="String" />
+    <Property Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
   </EntityType>
 </Schema>

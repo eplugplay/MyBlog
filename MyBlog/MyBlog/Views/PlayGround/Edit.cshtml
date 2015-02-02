@@ -1,0 +1,41 @@
+﻿@model MyBlog.Models.systemuser
+@{
+    ViewBag.Title = "Edit";
+    Layout = null;
+}
+<script type="text/javascript">
+    function Save() {
+        var Email = $("#Email").val();
+        var id = '@ViewBag.id';
+        $.ajax({
+            url: "PlayGround/Save",
+            async: false,
+            cache: false,
+            type: 'Get',
+            dataType: 'html',
+            data: { id: id, email: Email }
+        }).success(function (data) {
+            if (data == "Success") {
+                location.reload(true);
+            }
+            else {
+                alert("Could not save, error.");
+            }
+        }).error(function (xhr, status) {
+            alert(xhr.responseText);
+        });
+    }
+</script>
+
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <table>
+        <tr>
+        <td>
+            @Html.TextBoxFor(model => model.Email)
+        </td>
+        </tr>
+        </table>
+        <input type="button" value="Submit" onclick="Save()"/>
+    }
