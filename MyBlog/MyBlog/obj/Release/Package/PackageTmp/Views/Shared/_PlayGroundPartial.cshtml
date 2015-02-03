@@ -1,0 +1,77 @@
+﻿@model IEnumerable<MyBlog.Models.playground>
+
+<style type="text/css">
+.ui-widget-header,.ui-state-default, ui-button{
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+         .editDetails 
+         {
+            cursor: pointer;
+         }
+        
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".editDetails").on("click", function () {
+            var id = $(this).closest('tr').find(".IDClass").val();
+            $.ajax({
+                url: "PlayGround/Edit",
+                contentType: 'application/html; charset=utf-8',
+                type: 'GET',
+                cache: false,
+                data: { id: id },
+                dataType: 'html',
+                async: false
+            }).success(function (result) {
+                // Display the section contents.
+                $('#popupwindow').html(result);
+            }).error(function (xhr, status) {
+                alert(xhr.responseText);
+            });
+            $("#popupwindow").dialog({
+                autoOpen: false,
+                modal: true,
+                height: "300",
+                width: "500",
+                show: "fade",
+                buttons: {
+                    OK: function () { $(this).dialog("close"); }
+                }
+            });
+            $("#popupwindow").dialog("open");
+        });
+    });
+</script>
+
+<table>
+<th>
+List
+</th>
+@{int i = 0;}
+@foreach (var item in Model)
+{
+    if (i % 2 == 0)
+    {
+<tr class="editDetails" style="background-color:#D8D8D8">
+<td>
+@Html.DisplayTextFor(model => item.text)
+@Html.HiddenFor(model => item.id, new { @class = "IDClass" })
+</td>
+</tr>
+    }
+    else
+    {
+    <tr class="editDetails" style="background-color:#A4A4A4">
+<td>
+@Html.DisplayTextFor(model => item.text)
+@Html.HiddenFor(model => item.id, new { @class = "IDClass" })
+</td>
+</tr>
+    }
+    i++;
+}
+</table>

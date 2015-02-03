@@ -17,6 +17,7 @@ namespace MyBlog.Controllers
         public ActionResult Index()
         {
             _playground = from p in suMain.playgrounds
+                          orderby p.id ascending
                           select p;
             return View(_playground.ToList());
         }
@@ -70,7 +71,7 @@ namespace MyBlog.Controllers
             return Content("Success");
         }
 
-        public ContentResult Delete(int id)
+        public ContentResult Delete(int id, bool isLastRowDeleted)
         {
             using (var context = new db_9ae46c_myblogEntities())
             {
@@ -80,8 +81,15 @@ namespace MyBlog.Controllers
                 playground del = context.playgrounds.FirstOrDefault(m => m.id == id);
                 try
                 {
+                    // delete row
                     context.playgrounds.DeleteObject(del);
                     context.SaveChanges();
+
+                    // save row if last row
+                    if (isLastRowDeleted)
+                    {
+                        New("");
+                    }
                 }
                 catch (Exception e)
                 {
@@ -92,11 +100,27 @@ namespace MyBlog.Controllers
         }
 
         [HttpPost]
-        public PartialViewResult ReloadEditPartial()
+        public ActionResult ReloadEditPartial()
         {
             _playground = from p in suMain.playgrounds
+                          orderby p.id ascending
                            select p;
             return PartialView("_PlayGroundPartial", _playground.ToList());
+        }
+
+        public ContentResult GetRowCount()
+        {
+            var count = (from s in suMain.playgrounds
+                         select s).Count();
+            try
+            {
+
+            }
+            catch (Exception e)
+            {
+
+            }
+            return Content(count.ToString());
         }
     }
 }

@@ -2,14 +2,23 @@
 <Schema Namespace="db_9ae46c_myblogModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
   <EntityContainer Name="db_9ae46c_myblogEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="systemusers" EntityType="db_9ae46c_myblogModel.systemuser" />
+    <EntitySet Name="playgrounds" EntityType="db_9ae46c_myblogModel.playground" />
   </EntityContainer>
   <EntityType Name="systemuser">
     <Key>
-      <PropertyRef Name="Email" />
+      <PropertyRef Name="id" />
     </Key>
-    <Property Name="UserID" Type="String" Nullable="false" />
-    <Property Name="Email" Type="String" Nullable="false" />
-    <Property Name="Password" Type="String" Nullable="false" />
-    <Property Name="PasswordSalt" Type="String" Nullable="false" />
+    <Property Name="UserID" Nullable="false" Type="String" />
+    <Property Name="Email" Nullable="false" Type="String" />
+    <Property Name="Password" Nullable="false" Type="String" />
+    <Property Name="PasswordSalt" Nullable="false" Type="String" />
+    <Property Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+  </EntityType>
+  <EntityType Name="playground">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="text" />
   </EntityType>
 </Schema>

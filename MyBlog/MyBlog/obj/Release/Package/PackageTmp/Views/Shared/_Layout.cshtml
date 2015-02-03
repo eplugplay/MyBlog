@@ -64,6 +64,9 @@
 	<script src="http://code.jquery.com/qunit/qunit-1.10.0.js" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/jquery.cookie.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/Util.js")" type="text/javascript"></script>
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script type="text/javascript">
 
     </script>
@@ -81,6 +84,7 @@
                         <ul id="menu">
                             <li class="@Html.ActivePage("Home", "Index")">@Html.ActionLink("Home", "Index", "Home")</li>
                             <li class="@Html.ActivePage("Blog", "Posts")">@Html.ActionLink("Blog", "Posts", "Blog")</li>
+                            <li class="@Html.ActivePage("PlayGround", "Index")">@Html.ActionLink("Playground", "Index", "PlayGround")</li>
                             <li class="@Html.ActivePage("Home", "Interests")">@Html.ActionLink("Interests", "Interests", "Home")</li>
                             @if (Request.IsAuthenticated) {
                             <li class="@Html.ActivePage("Admin", "Index")">@Html.ActionLink("Admin", "Index", "Admin")</li>
