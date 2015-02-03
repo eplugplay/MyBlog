@@ -6,17 +6,25 @@
     <edmx:StorageModels>
     <Schema Namespace="db_9ae46c_myblogModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="db_9ae46c_myblogModelStoreContainer">
-          <EntitySet Name="systemusers" EntityType="db_9ae46c_myblogModel.Store.systemusers" Schema="db_9ae46c_myblog" store:Type="Tables" />
+          <EntitySet Name="playground" EntityType="db_9ae46c_myblogModel.Store.playground" store:Type="Tables" Schema="db_9ae46c_myblog" />
+          <EntitySet Name="systemusers" EntityType="db_9ae46c_myblogModel.Store.systemusers" store:Type="Tables" Schema="db_9ae46c_myblog" />
         </EntityContainer>
+        <EntityType Name="playground">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="text" Type="text" />
+        </EntityType>
         <EntityType Name="systemusers">
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="UserID" Nullable="false" MaxLength="150" Type="varchar" />
-          <Property Name="Email" Nullable="false" MaxLength="150" Type="varchar" />
-          <Property Name="Password" Nullable="false" MaxLength="200" Type="varchar" />
-          <Property Name="PasswordSalt" Nullable="false" MaxLength="200" Type="varchar" />
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="Email" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="Password" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="PasswordSalt" Type="varchar" Nullable="false" MaxLength="200" />
         </EntityType>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -24,6 +32,7 @@
       <Schema Namespace="db_9ae46c_myblogModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityContainer Name="db_9ae46c_myblogEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="systemusers" EntityType="db_9ae46c_myblogModel.systemuser" />
+          <EntitySet Name="playgrounds" EntityType="db_9ae46c_myblogModel.playground" />
         </EntityContainer>
         <EntityType Name="systemuser">
           <Key>
@@ -34,6 +43,13 @@
           <Property Name="Password" Nullable="false" Type="String" />
           <Property Name="PasswordSalt" Nullable="false" Type="String" />
           <Property Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+        </EntityType>
+        <EntityType Name="playground">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="text" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -48,6 +64,14 @@
             <ScalarProperty Name="Password" ColumnName="Password" />
             <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="playgrounds">
+            <EntityTypeMapping TypeName="db_9ae46c_myblogModel.playground">
+              <MappingFragment StoreEntitySet="playground">
+                <ScalarProperty Name="text" ColumnName="text" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
@@ -70,6 +94,7 @@
     <Diagrams>
       <Diagram Name="MainDbEntities">
         <EntityTypeShape EntityType="db_9ae46c_myblogModel.systemuser" PointX="0.75" PointY="0.75" Width="1.5" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_9ae46c_myblogModel.playground" Width="1.5" PointX="3.375" PointY="0.75" Height="1.4033821614583335" />
       </Diagram>
     </Diagrams>
   </Designer>

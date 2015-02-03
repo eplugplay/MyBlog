@@ -80,6 +80,22 @@ namespace MyBlog.Models
             }
         }
         private ObjectSet<systemuser> _systemusers;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<playground> playgrounds
+        {
+            get
+            {
+                if ((_playgrounds == null))
+                {
+                    _playgrounds = base.CreateObjectSet<playground>("playgrounds");
+                }
+                return _playgrounds;
+            }
+        }
+        private ObjectSet<playground> _playgrounds;
 
         #endregion
 
@@ -92,6 +108,14 @@ namespace MyBlog.Models
         {
             base.AddObject("systemusers", systemuser);
         }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the playgrounds EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToplaygrounds(playground playground)
+        {
+            base.AddObject("playgrounds", playground);
+        }
 
         #endregion
 
@@ -100,6 +124,87 @@ namespace MyBlog.Models
     #endregion
 
     #region Entities
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="db_9ae46c_myblogModel", Name="playground")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class playground : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new playground object.
+        /// </summary>
+        /// <param name="id">Initial value of the id property.</param>
+        public static playground Createplayground(global::System.Int32 id)
+        {
+            playground playground = new playground();
+            playground.id = id;
+            return playground;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 id
+        {
+            get
+            {
+                return _id;
+            }
+            set
+            {
+                if (_id != value)
+                {
+                    OnidChanging(value);
+                    ReportPropertyChanging("id");
+                    _id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("id");
+                    OnidChanged();
+                }
+            }
+        }
+        private global::System.Int32 _id;
+        partial void OnidChanging(global::System.Int32 value);
+        partial void OnidChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String text
+        {
+            get
+            {
+                return _text;
+            }
+            set
+            {
+                OntextChanging(value);
+                ReportPropertyChanging("text");
+                _text = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("text");
+                OntextChanged();
+            }
+        }
+        private global::System.String _text;
+        partial void OntextChanging(global::System.String value);
+        partial void OntextChanged();
+
+        #endregion
+
+    
+    }
     
     /// <summary>
     /// No Metadata Documentation available.

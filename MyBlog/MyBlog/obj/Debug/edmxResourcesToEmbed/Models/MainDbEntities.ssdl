@@ -1,16 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="db_9ae46c_myblogModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
   <EntityContainer Name="db_9ae46c_myblogModelStoreContainer">
-    <EntitySet Name="systemusers" EntityType="db_9ae46c_myblogModel.Store.systemusers" Schema="db_9ae46c_myblog" store:Type="Tables" />
+    <EntitySet Name="playground" EntityType="db_9ae46c_myblogModel.Store.playground" store:Type="Tables" Schema="db_9ae46c_myblog" />
+    <EntitySet Name="systemusers" EntityType="db_9ae46c_myblogModel.Store.systemusers" store:Type="Tables" Schema="db_9ae46c_myblog" />
   </EntityContainer>
+  <EntityType Name="playground">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="text" Type="text" />
+  </EntityType>
   <EntityType Name="systemusers">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-    <Property Name="UserID" Nullable="false" MaxLength="150" Type="varchar" />
-    <Property Name="Email" Nullable="false" MaxLength="150" Type="varchar" />
-    <Property Name="Password" Nullable="false" MaxLength="200" Type="varchar" />
-    <Property Name="PasswordSalt" Nullable="false" MaxLength="200" Type="varchar" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="PasswordSalt" Type="varchar" Nullable="false" MaxLength="200" />
   </EntityType>
 </Schema>

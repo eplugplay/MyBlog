@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MyBlog.Models.systemuser>
+﻿@model IEnumerable<MyBlog.Models.playground>
 
 <style type="text/css">
 .ui-widget-header,.ui-state-default, ui-button{
@@ -35,7 +35,7 @@
             $("#popupwindow").dialog({
                 autoOpen: false,
                 modal: true,
-                height: "500",
+                height: "300",
                 width: "500",
                 show: "fade",
                 buttons: {
@@ -49,7 +49,7 @@
 
 <table>
 <th>
-Email List
+List
 </th>
 @{int i = 0;}
 @foreach (var item in Model)
@@ -58,7 +58,7 @@ Email List
     {
 <tr class="editDetails" style="background-color:#D8D8D8">
 <td>
-@Html.DisplayTextFor(model => item.Email)
+@Html.DisplayTextFor(model => item.text)
 @Html.HiddenFor(model => item.id, new { @class = "IDClass" })
 </td>
 </tr>
@@ -67,7 +67,7 @@ Email List
     {
     <tr class="editDetails" style="background-color:#A4A4A4">
 <td>
-@Html.DisplayTextFor(model => item.Email)
+@Html.DisplayTextFor(model => item.text)
 @Html.HiddenFor(model => item.id, new { @class = "IDClass" })
 </td>
 </tr>

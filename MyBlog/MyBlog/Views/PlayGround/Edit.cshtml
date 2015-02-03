@@ -1,8 +1,14 @@
-﻿@model MyBlog.Models.systemuser
+﻿@model MyBlog.Models.playground
 @{
     ViewBag.Title = "Edit";
     Layout = null;
 }
+
+<style type="text/css">
+#editForm{
+ /*background-color:Gray;*/
+}
+</style>
 <script type="text/javascript">
 
     function ReloadPartial() {
@@ -13,42 +19,109 @@
             success: function (data) {
                 $('#playGround').html(data);
                 $('#popupwindow').dialog("close");
+                return true;
             }
         });
     }
 
-    function Save() {
-        var Email = $("#Email").val();
+    function SaveNew() {
+        //        var modelDataJSON = '@Html.Raw(Json.Encode(Model))';
+        var Text = $("#text").val();
+        if (Text == "") {
+            alert('Please enter value.');
+            return false;
+        }
+        var answer = confirm("Save New?");
+        if (answer) {
+            $.ajax({
+                url: "PlayGround/New",
+                async: false,
+                cache: false,
+                type: 'Get',
+                dataType: 'html',
+                data: { text: Text }
+            }).success(function (data) {
+                if (data == "Success") {
+                    ReloadPartial();
+                }
+                else {
+                    alert("Could not save, error.");
+                }
+            }).error(function (xhr, status) {
+                alert(xhr.responseText);
+            });
+        }
+    }
+
+    function Update() {
+        var Text = $("#text").val();
+        if (Text == "") {
+            alert('Please enter value.');
+            return false;
+        }
         var id = '@ViewBag.id';
-        $.ajax({
-            url: "PlayGround/Save",
-            async: false,
-            cache: false,
-            type: 'Get',
-            dataType: 'html',
-            data: { id: id, email: Email }
-        }).success(function (data) {
-            if (data == "Success") {
-                ReloadPartial();
-            }
-            else {
-                alert("Could not save, error.");
-            }
-        }).error(function (xhr, status) {
-            alert(xhr.responseText);
-        });
+        var answer = confirm("Update?");
+        if (answer) {
+            $.ajax({
+                url: "PlayGround/Update",
+                async: false,
+                cache: false,
+                type: 'Get',
+                dataType: 'html',
+                data: { id: id, text: Text }
+            }).success(function (data) {
+                if (data == "Success") {
+                    ReloadPartial();
+                    return true;
+                }
+                else {
+                    alert("Could not save, error.");
+                }
+            }).error(function (xhr, status) {
+                alert(xhr.responseText);
+            });
+        }
+    }
+
+    function Delete() {
+        var id = '@ViewBag.id';
+        var answer = confirm("Delete?");
+        if (answer) {
+            $.ajax({
+                url: "PlayGround/Delete",
+                async: false,
+                cache: false,
+                type: 'Get',
+                dataType: 'html',
+                data: { id: id }
+            }).success(function (data) {
+                if (data == "Success") {
+                    ReloadPartial();
+                    return true;
+                }
+                else {
+                    alert("Could not save, error.");
+                }
+            }).error(function (xhr, status) {
+                alert(xhr.responseText);
+            });
+        }
     }
 </script>
 
     @using (Html.BeginForm())
     {
+        <div id="editForm">
         @Html.ValidationSummary(true)
         <table>
         <tr>
         <td>
-            @Html.TextBoxFor(model => model.Email)
+            @Html.TextBoxFor(model => model.text)
         </td>
         </tr>
         </table>
-        <input type="button" value="Save" onclick="Save()"/>
+        <input type="button" value="Update" onclick="Update()"/>
+        <input type="button" value="New" onclick="SaveNew()"/>
+        <input type="button" value="Delete" onclick="Delete()"/>
+        </div>
     }

@@ -12,5 +12,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="playgrounds">
+      <EntityTypeMapping TypeName="db_9ae46c_myblogModel.playground">
+        <MappingFragment StoreEntitySet="playground">
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
