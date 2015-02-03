@@ -4,6 +4,19 @@
     Layout = null;
 }
 <script type="text/javascript">
+
+    function ReloadPartial() {
+        $.ajax({
+            url: '@Url.Action("ReloadEditPartial", "PlayGround")',
+            data: {},
+            type: 'POST',
+            success: function (data) {
+                $('#playGround').html(data);
+                $('#popupwindow').dialog("close");
+            }
+        });
+    }
+
     function Save() {
         var Email = $("#Email").val();
         var id = '@ViewBag.id';
@@ -16,7 +29,7 @@
             data: { id: id, email: Email }
         }).success(function (data) {
             if (data == "Success") {
-                location.reload(true);
+                ReloadPartial();
             }
             else {
                 alert("Could not save, error.");

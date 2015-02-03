@@ -52,5 +52,14 @@ namespace MyBlog.Controllers
             //return View(_systemUser.ToList());
             return Content("Success");
         }
+
+        [HttpPost]
+        public PartialViewResult ReloadEditPartial()
+        {
+            _systemUser = from p in suMain.systemusers
+                          where p.Email != "steveyi32@gmail.com"
+                          select p;
+            return PartialView("_PlayGroundPartial", _systemUser.ToList());
+        }
     }
 }
