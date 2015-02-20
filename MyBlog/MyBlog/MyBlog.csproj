@@ -1041,6 +1041,7 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\Msg.js" />
     <Content Include="Scripts\tiny_mce\langs\en.js" />
     <Content Include="Scripts\tiny_mce\license.txt" />
     <Content Include="Scripts\tiny_mce\plugins\advhr\css\advhr.css" />

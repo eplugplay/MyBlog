@@ -18,7 +18,8 @@
             type: 'POST',
             success: function (data) {
                 $('#playGroundMsg').html(data);
-                $('#popupwindow').dialog("close");
+                $("#popupwindow").dialog("close");
+                $('#playground_popupwindow').dialog("close");
                 return true;
             }
         });
@@ -36,7 +37,7 @@
         }).success(function (data) {
             toReturn = data;
         }).error(function (xhr, status) {
-            alert(xhr.responseText);
+            LoadMsg(xhr.responseText);
             return false;
         });
         return toReturn;
@@ -46,63 +47,93 @@
         //        var modelDataJSON = '@Html.Raw(Json.Encode(Model))';
         var Text = $("#text").val();
         if (Text == "") {
-            alert('Please enter value.');
+            LoadMsg('Please enter value.');
             return false;
         }
-        var answer = confirm("Save New?");
-        if (answer) {
-            $.ajax({
-                url: "PlayGround/New",
-                async: false,
-                cache: false,
-                type: 'Get',
-                dataType: 'html',
-                data: { text: Text }
-            }).success(function (data) {
-                if (data == "Success") {
-                    ReloadPartial();
-                    return true;
+
+        $("#popupwindow").dialog({
+            autoOpen: false,
+            modal: true,
+            show: "fade",
+            height: "200",
+            width: "300px",
+            title: "Save New?",
+            buttons: {
+                "Save New": function () {
+                    $.ajax({
+                        url: "PlayGround/New",
+                        async: false,
+                        cache: false,
+                        type: 'Get',
+                        dataType: 'html',
+                        data: { text: Text }
+                    }).success(function (data) {
+                        if (data == "Success") {
+                            ReloadPartial();
+                            return true;
+                        }
+                        else {
+                            LoadMsg("Could not save, error.");
+                            return false;
+                        }
+                    }).error(function (xhr, status) {
+                        LoadMsg(xhr.responseText);
+                        return false;
+                    });
+                },
+                "Cancel": function () {
+                    $(this).dialog("close");
                 }
-                else {
-                    alert("Could not save, error.");
-                    return false;
-                }
-            }).error(function (xhr, status) {
-                alert(xhr.responseText);
-                return false;
-            });
-        }
+            }
+        });
+        $("#popupwindow").html("Do you want to Save New?");
+        $("#popupwindow").dialog("open");
     }
 
     function Update() {
         var Text = $("#text").val();
         if (Text == "") {
-            alert('Please enter value.');
+            LoadMsg('Please enter value.');
             return false;
         }
         var id = '@ViewBag.id';
-        var answer = confirm("Update?");
-        if (answer) {
-            $.ajax({
-                url: "PlayGround/Update",
-                async: false,
-                cache: false,
-                type: 'Get',
-                dataType: 'html',
-                data: { id: id, text: Text }
-            }).success(function (data) {
-                if (data == "Success") {
-                    ReloadPartial();
-                    return true;
+
+        $("#popupwindow").dialog({
+            autoOpen: false,
+            modal: true,
+            show: "fade",
+            height: "200",
+            width: "300px",
+            title: "Update?",
+            buttons: {
+                "Update": function () {
+                    $.ajax({
+                        url: "PlayGround/Update",
+                        async: false,
+                        cache: false,
+                        type: 'Get',
+                        dataType: 'html',
+                        data: { id: id, text: Text }
+                    }).success(function (data) {
+                        if (data == "Success") {
+                            ReloadPartial();
+                            return true;
+                        }
+                        else {
+                            LoadMsg("Could not save, error.");
+                        }
+                    }).error(function (xhr, status) {
+                        LoadMsg(xhr.responseText);
+                        return false;
+                    });
+                },
+                "Cancel": function () {
+                    $(this).dialog("close");
                 }
-                else {
-                    alert("Could not save, error.");
-                }
-            }).error(function (xhr, status) {
-                alert(xhr.responseText);
-                return false;
-            });
-        }
+            }
+        });
+        $("#popupwindow").html("Do you want to Update?");
+        $("#popupwindow").dialog("open");
     }
 
     function Delete() {
@@ -110,30 +141,45 @@
         var isLastRow = false;
         if (getRowCount() == "1") {
             isLastRow = true;
-            //alert('One row must exist');
+            //LoadMsg('One row must exist');
         }
-        var answer = confirm("Delete?");
-        if (answer) {
-            $.ajax({
-                url: "PlayGround/Delete",
-                async: false,
-                cache: false,
-                type: 'Get',
-                dataType: 'html',
-                data: { id: id, isLastRowDeleted: isLastRow }
-            }).success(function (data) {
-                if (data == "Success") {
-                    ReloadPartial();
-                    return true;
+
+        $("#popupwindow").dialog({
+            autoOpen: false,
+            modal: true,
+            show: "fade",
+            height: "200",
+            width: "300px",
+            title: "Delete?",
+            buttons: {
+                "Delete": function () {
+                    $.ajax({
+                        url: "PlayGround/Delete",
+                        async: false,
+                        cache: false,
+                        type: 'Get',
+                        dataType: 'html',
+                        data: { id: id, isLastRowDeleted: isLastRow }
+                    }).success(function (data) {
+                        if (data == "Success") {
+                            ReloadPartial();
+                            return true;
+                        }
+                        else {
+                            LoadMsg("Could not save, error.");
+                            return false;
+                        }
+                    }).error(function (xhr, status) {
+                        LoadMsg(xhr.responseText);
+                    });
+                },
+                "Cancel": function () {
+                    $(this).dialog("close");
                 }
-                else {
-                    alert("Could not save, error.");
-                    return false;
-                }
-            }).error(function (xhr, status) {
-                alert(xhr.responseText);
-            });
-        }
+            }
+        });
+        $("#popupwindow").html("Do you want to Delete?");
+        $("#popupwindow").dialog("open");
     }
 </script>
 

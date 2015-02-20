@@ -28,11 +28,11 @@
                 async: false
             }).success(function (result) {
                 // Display the section contents.
-                $('#popupwindow').html(result);
+                $('#playground_popupwindow').html(result);
             }).error(function (xhr, status) {
-                alert(xhr.responseText);
+                LoadSecondaryMsg(xhr.responseText);
             });
-            $("#popupwindow").dialog({
+            $("#playground_popupwindow").dialog({
                 autoOpen: false,
                 modal: true,
                 height: "300",
@@ -42,7 +42,7 @@
                     OK: function () { $(this).dialog("close"); }
                 }
             });
-            $("#popupwindow").dialog("open");
+            $("#playground_popupwindow").dialog("open");
         });
     });
 </script>
