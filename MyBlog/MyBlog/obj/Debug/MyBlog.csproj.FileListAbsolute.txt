@@ -432,4 +432,3 @@ C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\DotNetOpenAuth.OpenId.
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.csprojResolveAssemblyReference.cache
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.dll
 C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.pdb
-C:\Users\stevey\Documents\GitHub\MyBlog\MyBlog\MyBlog\bin\MyBlog.dll.config
