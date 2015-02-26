@@ -8,6 +8,9 @@
 	<script type="text/javascript" src="../../utils/validate.js"></script>
 	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
 	<script type="text/javascript" src="js/image.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="../../../fck-filemanager-browse.js" type="text/javascript"></script>
 	<link href="css/advimage.css" rel="stylesheet" type="text/css" />
 </head>
 <body id="advimage" style="display: none" role="application" aria-labelledby="app_title">
@@ -31,7 +34,8 @@
 								<td class="column1"><label id="srclabel" for="src">{#advimage_dlg.src}</label></td>
 								<td colspan="2"><table role="presentation" border="0" cellspacing="0" cellpadding="0">
 									<tr> 
-										<td><input name="src" type="text" id="src" value="" class="mceFocus" onchange="ImageDialog.showPreviewImage(this.value);" aria-required="true" /></td> 
+										<td><input name="src" type="text" id="src" value="" class="mceFocus" onchange="ImageDialog.showPreviewImage(this.value);" aria-required="true" />
+                                        </td> 
 										<td id="srcbrowsercontainer">&nbsp;</td>
 									</tr>
 								</table></td>
