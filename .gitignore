@@ -1,0 +1,4 @@
+#Ignore WebDeploy publish profiles
+
+
+*.Publish.xml
